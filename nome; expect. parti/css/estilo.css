@@ -1,0 +1,60 @@
+body {
+    background:#f7f7f7;
+    background-image: url(tela3.svg);
+    background-size: cover; 
+} 
+
+.box2 {
+      text-align:center;
+      position:relative;
+      top: 17px;  
+      
+}
+
+.box { 
+    text-align: center;
+    width:40%;
+    height:200px;
+    background:rgb(208, 211, 212);
+    margin:150px auto; 
+} 
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+ .effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+} 
+
+.select {    
+    width:250px;  /* Tamanho final do select */    
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+}  
+
+.box2 select {      
+    background: url(ico-seta-select.gif) no-repeat #a6b3b9;  /* Imagem de fundo (Seta) */      
+    background-position: 205px center;  /*Posição da imagem do background*/      
+    width: 170px; /* Tamanho do select, maior que o tamanho da div "div-select" */      
+    height:48px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */  
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */  
+    font-size:16px; /* Tamanho da Fonte */  
+    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */  
+    color:rgb(15, 15, 15); /* Cor da Fonte */      
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */      
+    text-overflow: "";  /* Remove seta padrão do FireFox */            
+}
+
+select::-ms-expand { display: none;
+} /* Remove seta padrão do IE*/
+
+/*---------------> SVG <----------------*/
+#svg-tela { 
+    height: 200px;
+    width: 300px;
+    float: left;
+}
+
+  
+
