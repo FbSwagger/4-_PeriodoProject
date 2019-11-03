@@ -56,5 +56,20 @@ select::-ms-expand { display: none;
     float: left;
 }
 
-  
+/* nav - bar */ 
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(4,9,30,0.85);
+    color: #fff;
+    height: 60px;
+    align-items: center;
+    padding: 11px;
+    justify-content: space-between;
+    box-shadow: 1px 0.5px 4px #999;	  
+}
 
+#logo{
+    cursor: pointer;
+
+}
