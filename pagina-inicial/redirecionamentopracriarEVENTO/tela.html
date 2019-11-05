@@ -16,7 +16,7 @@
            
            
            body{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(200, 223, 223);
     
    
   }
@@ -26,25 +26,14 @@
                 text-align: center;
               }
               fieldset{
-                
-   
-             
-    
-  background-color: #fff;
+  background-color:rgb(230, 236, 238);
   width:600px;
-  height:420px;
+  height:280px;
   border-radius: 50px;
-
-  padding: 10px;
-
-
-
-
- 
+  font-size: 15p;
 }
-
 body {
-   margin:1; 
+   margin:0; 
 }
 * {
     margin: 0;
@@ -54,26 +43,22 @@ body {
 
 
 
-nav{
-    display:flex;
-    flex-direction:row;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #fff;
-    height: 50px;
-    align-items: center;
-    padding: 16px;
-    justify-content: space-between;
-    box-shadow: 1px 0.5px 4px #999;	  
-}
-#logo{
-    cursor: pointer;
-}
+.navbar{
+  
+   width: 100%;
+   display:inline-block; 
+  background: rgb(3, 31, 41);
+  width:100%;
+  height:70px;
+  margin:0;
+ text-align:left;
+
 
  
 }
 h1{
- margin:60;
-  margin-top:-9px;
+ margin:50;
+  margin-top:6px;
   
   
     border-radius: 50px;
@@ -81,13 +66,8 @@ h1{
 
 }
 
-form input{
-   margin-top: 10px;
-   padding: 15px;
-   border-radius: 8px;
-   border: none;
-   background:#D3D3D3;
-}
+
+
 
 .navbar{
     opacity: 1;
@@ -95,7 +75,7 @@ form input{
 
               div.center-form {
                 position:absolute
-                min-height: 35vh; 
+                min-height: 33vh; 
               }
             
               div.center-form > form {
@@ -105,42 +85,33 @@ form input{
                
               }
               #botao{
-                font-weight: bold;
-    border: none;
-    width: 150px;
-    padding: 10px;
-    color:black;
+                background: rgb(0, 153, 255);
+                display:inline-block;
+                            cursor:pointer;
+                      font-family:Verdana;
+                      font-weight:bold;
+                      font-size:12px;
+                      padding:6px 16px;
+                      text-decoration:none
 
-    border-radius: 8px;
-    background:#8ab92d;   
-    cursor: pointer; 
               }
               #botaovoltar{
-                font-weight: bold;
-    border: none;
-    width: 100px;
-    padding: 10px;
-    color: rgb(87, 55, 55);
-
-    border-radius: 8px;
-    background:#05a6c2;   
-    cursor: pointer; 
+                          background: rgba(75, 109, 223, 0.897);
+                          display:inline-block;
+                      cursor:pointer;
+                      font-family:Verdana;
+                      font-weight:bold;
+                    font-size:10px;
+                  padding:6px 6px;
+                      text-decoration:none
               }
              
              
-             button{
              
-             }
 
 
-button {
-
-background: #1eddeb;
-   color: #fff;
-   border: none;
-   border-radius: 8px; 
-   padding: 10px;
-   cursor: pointer;
+.button {
+background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
 }
 
 
@@ -198,12 +169,11 @@ background: #1eddeb;
                         
                
                   <form name="form"></form>
-            <input type=  "text" id = " Nome Completo "placeholder="Nome Completo" name="fone"autocomplete ="off"><br><br/>
-          <input type= "text" id = " Cidade "placeholder="Cidade" name="Cidade"autocomplete ="off"></br>
-          <input type="text"placeholder="Estado"name="Estado"autocomplete ="off"><br><br/>
-          <input type=  "text" id = " E-mail "placeholder="fulano@hotmail.com" name="fone"autocomplete ="off">   <br><br/>
+Informe Seu Nome Completo:  <input type=  "text" id = " Nome Completo "placeholder="Nome Completo" name="fone"autocomplete ="off"><br><br/>
+                      Informe Cidade: <input type= "text" id = " Cidade "placeholder="Cidade" name="Cidade"autocomplete ="off">  Estado:<input type="text"placeholder="Estado"name="Estado"autocomplete ="off"><br><br/>
+ Cadastre Seu E-mail:<input type=  "text" id = " E-mail "placeholder="fulano@hotmail.com" name="fone"autocomplete ="off">   <br><br/>
                          
-               <input type= "text" id = " Telefone "placeholder="(__)_____-____" name="fone"autocomplete ="off">   <br><br/>
+                      Informe Seu  Telefone:  <input type= "text" id = " Telefone "placeholder="(__)_____-____" name="fone"autocomplete ="off">   <br><br/>
                          
                     
                      
