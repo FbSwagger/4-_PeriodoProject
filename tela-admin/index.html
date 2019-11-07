@@ -136,29 +136,19 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                             <li class="sidebar-item">
-                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../tela-admin(MENU COMPLETO)/nice-html/ltr/index.html" aria-expanded="false">
                                         <i class="mdi mdi-store"></i>
                                         <span class="hide-menu">Home</span>
                                     </a>
                                 </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-calendar"></i>
-                                <span class="hide-menu">Programação</span>
-                            </a>
-                        </li>
+                    
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                                 <i class="mdi mdi-account"></i>
                                 <span class="hide-menu">Pessoas</span>
                             </a>
                         </li>
-                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-square-inc-cash"></i>
-                                <span class="hide-menu">Vendas</span>
-                            </a>
-                        </li>
+                         
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                                 <i class="mdi mdi-ticket"></i>
@@ -167,11 +157,35 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-face"></i>
+                                <i class="mdi mdi-calendar"></i>
+                                <span class="hide-menu">Programação</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                                <i class="mdi mdi-file-document"></i>
+                                <span class="hide-menu">Submissões</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                                <i class="mdi mdi-school"></i>
                                 <span class="hide-menu">Certificados</span>
                             </a>
                         </li>
-                      
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                                <i class="mdi mdi-desktop-mac"></i>
+                                <span class="hide-menu">Página do evento </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                                <i class="mdi mdi-settings"></i>
+                                <span class="hide-menu">Configuração</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -253,7 +267,7 @@
                         <form class="form-inline pull-right ng-pristine ng-valid">
                                 <!---->
                                 <div class="form-group">
-                                    <select ng-model="filtro.necessitaInscricao" ng-change="filtrarAtividade(); " class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" style="">
+                                    <select ng-model="filtro.necessitaInscricao" ng-change="filtrarAtividade(); " class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
                                         <option ng-value="null" value="object:null" selected="selected">Todas as atividades</option>
                                         <option ng-value="true" value="boolean:true">Atividades com inscrição</option>
                                         <option ng-value="false" value="boolean:false">Atividades sem inscrição</option>
@@ -314,14 +328,14 @@
                                                         <div class="row">
                                                             
                                                             <div class="form-group space">
-                                                                    <select  class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" style="">
+                                                                    <select  class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
                                                                         <option ng-value="null" value="object:null" selected="selected">Defina o tipo</option>
                                                                         <option ng-value="true" value="boolean:true">Apresentação cultural</option>
                                                                         <option ng-value="false" value="boolean:false">Palestra</option>
                                                                     </select>
                                                             </div>
                                                             <div class="form-group">
-                                                                    <select  class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" style="">
+                                                                    <select  class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
                                                                         <option ng-value="null" value="object:null" selected="selected">Inscrição</option>
                                                                         <option ng-value="true" value="boolean:true">Gratuita</option>
                                                                         <option ng-value="false" value="boolean:false">Paga</option>
@@ -329,7 +343,7 @@
                                                                     </select>
                                                             </div>
                                                             <div class="form-group space">
-                                                                    <select  class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" style="">
+                                                                    <select  class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
                                                                         <option ng-value="null" value="object:null" selected="selected">Duração</option>
                                                                         <option ng-value="true" value="boolean:true">Um dia</option>
                                                                         <option ng-value="false" value="boolean:false">Dois dias</option>
