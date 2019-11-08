@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Stylesheet" type="Text/css" href="estilos/estilo-cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    
+    <title>Acesse sua conta</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <img id="logo" src="./imagens/download.png" href="#">
+        
+    </nav>
+    <div class="container">
+        <div>
+            <img id="svg-login" src="imagens/login2.svg" >
+        </div>
+        <div>
+            <form>
+                
+                <h1 id="h2-form">Criar conta</h1>
+                <input  class="input-form" type="text" placeholder="Nome do evento:" name="Nome" required>
+                <div class="col-12">
+                        <div class="form-group">
+                          <label>E a expectativa de participantes?</label>
+                          <select ng-model="evento.opcaoExpectativaParticipantes" class="data-hj-whitelist form-control inputs-criar ng-not-empty ng-dirty ng-valid-parse ng-touched ng-valid ng-valid-expectativa" 
+                          placeholder="Quantos participantes são esperados?" validator="required" valid-method="submit" name="expectativa" style="">
+                            <option value="" disabled="" selected="selected">-- Selecione uma opção --</option>
+                            <!----><option ng-repeat="opt in viewModel.opcoesExpectativaParticipantes" ng-value="opt.id" value="number:1">Até 300 participantes</option>
+                            <!----><option ng-repeat="opt in viewModel.opcoesExpectativaParticipantes" ng-value="opt.id" value="number:2">De 301 até 1.000 participantes</option>
+                            <!----><option ng-repeat="opt in viewModel.opcoesExpectativaParticipantes" ng-value="opt.id" value="number:3">Acima de 1.000 participantes</option>
+                            <!----> </select><span><p class="validation-valid"> </p></span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                            <div class="form-group">
+                              <label>Escolha o tipo do seu evento</label>
+                              <select name="tipo" ng-model="evento.opcaoTipo" class="data-hj-whitelist form-control inputs-criar ng-not-empty ng-dirty ng-valid-parse ng-touched ng-valid ng-valid-tipo" valid-method="submit" placeholder="Qual o tipo do seu evento?" validator="required" style="">
+                                <option value="" disabled="" selected="selected">-- Selecione uma opção --</option>
+                                <!----><option ng-repeat="opt in viewModel.tipos" ng-value="opt.id" value="number:15">Acadêmico - Seminário/Jornada</option>
+                                <!----><option ng-repeat="opt in viewModel.tipos" ng-value="opt.id" value="number:16">Científico - Congresso/Simpósio</option><!----><option ng-repeat="opt in viewModel.tipos" ng-value="opt.id" value="number:17">Corporativo - Empresarial</option>
+                                <!----><option ng-repeat="opt in viewModel.tipos" ng-value="opt.id" value="number:18">Curso - Workshop/Palestra</option><!----><option ng-repeat="opt in viewModel.tipos" ng-value="opt.id" value="number:19">Entretenimento - Show/Festa</option>
+                                <!----><option ng-repeat="opt in viewModel.tipos" ng-value="opt.id" value="number:20">Outro</option><!---->
+                              </select><span><p class="validation-valid"> </p></span>
+                            </div>
+                          </div>
+                <input type="submit" class="btn btn-form" value="Continuar" name="botao-login" href="./CADASTROtela.2/cadastro2.html">
+            
+            </form>
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
