@@ -1,7 +1,7 @@
 body {
+    
     margin: 0;
     padding: 0;
-    
     font-family:'PT Sans', sans-serif;
     height: 100%;
 
@@ -98,7 +98,7 @@ input{
     margin: 2px;
     padding: 10px;
     color: #fff;
-
+    
     border-radius: 2px;
     background:#8ab92d;   
     cursor: pointer; 
