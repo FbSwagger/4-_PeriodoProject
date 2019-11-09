@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f7f7f7;
+}
+/*-----------------> Nav bar ---------------------*/
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(4,9,30,0.85);
+    color: #fff;
+    height: 50px;
+    align-items: center;
+    padding: 11px;
+    justify-content: space-between;
+    box-shadow: 1px 0.5px 4px #999;	  
+}
+#logo{
+    cursor: pointer;
+}
+/*---------------> SVG <----------------*/
+#svg-login{
+ width: 600px;
+}
+/* ---------------> BOTÕES <--------------------*/
+.btn{
+    font-weight: bold;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+
+    border-radius: 8px;
+    background:#8ab92d;   
+    cursor: pointer; 
+}
+
+.btn-facebook{
+   background: #3b5998;
+   color: #fff;
+   border: none;
+   border-radius: 8px; 
+   padding: 10px;
+   cursor: pointer;
+}
+.btn-google{
+    background: #bc3c3c;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 8px; 
+    padding: 10px;
+    cursor: pointer;
+ }
+
+.btn-facebook:hover{
+    background: #191970;
+}
+.btn-google:hover{
+    background:#9d0229;
+}
+/*--------------- CONTAINER -------------------*/
+#svg-login{
+    padding: 30px;
+    margin-left: 110px;
+ 
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* -------> FORMATAÇÃO DO FORMULARIO <------------ */
+form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    box-shadow: 2px 1px 5px rgba(107, 104, 104, 0.5);
+    padding: 30px;
+    background-color: #fff;
+
+}
+form input{
+   margin-top: 15px;
+   padding: 15px;
+   border-radius: 8px;
+   border: none;
+   background:#D3D3D3;
+}
+#h2-form{
+    width: 50%;
+    color:black;
+    margin-top: -20px;
+    border-bottom: 5px solid #8ab92d;
+    
+}
+.btn-form{
+    width: 300px;
+    height: 40px;
+}
+
+#esqueceu-senha{
+    padding: 10px;
+    display: flex;
+    float: right;
+    color: 	#1E90FF;
+    
+}
+/*-----------> ICONES <-------------*/
+.icon{
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*-----------> AJUSTES DE RESPONSIVIDADE <-------------*/
+@media (max-width: 1024px) {
+    #svg-login{
+        display: none;
+    }
+    .container{ 
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    form{
+        width: 100%;
+        padding:20px;
+        margin-right: 0;
+        
+        
+    }
+    .btn{
+        width: auto;
+    }
+    
+ }
