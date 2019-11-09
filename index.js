@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/Views/cadastro'));
 app.use(express.static(__dirname + '/Views/login'));
 app.use(express.static(__dirname + '/Views/tela-admin'));
 app.use(express.static(__dirname + '/Views/criar-evento'));
-app.use(express.static(__dirname + '/Views/criar'));
+app.use(express.static(__dirname + '/Views/criar-evento-usuario'));
 
 //template engine
 
@@ -38,7 +38,7 @@ app.get("/admin",function(req, res){
 
 
 app.get("/dados", function(req, res){
-    res.sendFile(__dirname + "/Views/criar/index.html");
+    res.sendFile(__dirname + "/Views/criar-evento-usuario/index.html");
 })
 app.listen(2000, function(){
     console.log("Servidor rodando no endereço localhost:2000");
