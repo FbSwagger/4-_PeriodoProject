@@ -1,0 +1,28 @@
+.space{
+    padding: 10px;
+}
+#text-atividade{
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.botao{
+    margin: 2px;
+}
+.btn-verde{
+    background-color: #8ab92d ;
+    color: #fff;
+}
+.space{
+    padding: 20px;
+}
+.tabela-size{
+    margin-left: 20px;
+    width: 900px;
+}
+.header-modal{
+    background-color: #8ab92d;
+    color: #fff;
+}
+
