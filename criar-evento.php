@@ -16,17 +16,17 @@
             <div class="box effect1">  
                  
 
-                <form class="box2"> 
+                <form class="box2" action="evento-bd.php" method="POST" > 
                     
                     <label for="nome_cad" class="input-form"> Nome do evento </label><br>
-                    <input id="nome_cad" name="nome_cad" placeholder="Nome:" required type="text" placeholder="" /> 
+                    <input id="nome_cad" name="nome-evento" placeholder="Nome:" required type="text" placeholder="" /> 
                     
                     <p>
                     <label> Expectativa de Participantes </label> 
                     </p> 
 
                     <p>
-                    <select id="select" name="seleção campo" required>
+                    <select id="select" name="select-campo" required>
 							<option value="Menos de 300"> Menos de 300 </option> 
 							<option value="300"> 300</option>
 							<option value="Entre 300 a 1000"> Entre 300 a 1000 </option>
@@ -34,7 +34,7 @@
                     </select>
                     </p> 
                     
-                    <input  href="http://localhost:2000/dados" id="butao" type="submit" class="btn" value="Enviar"/> 
+                    <input id="butao" type="submit" class="btn" value="Enviar"/> 
                     
                 </form> 
             </div>

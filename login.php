@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="br">
+<?php
+ session_start();
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +16,7 @@
 <body>
     <nav id="nav-bar">
         <a href="http://localhost/projeto/"><img id="logo" src="./img/download.png"></a>
-        <a class="btn" href="#">Cadastre-se</a>
+        <a class="btn" href="http://localhost/projeto/cadastro-usuario.php">Cadastre-se</a>
     </nav>
     <div class="container">
         <div>
@@ -21,11 +24,11 @@
             <img id="svg-login" src="img/login2.svg" >
         </div>
         <div>
-            <form>
+            <form action="login-verifica.php" method="POST">
                 <h1 id="h2-form">Bem vindo!</h1>
                 <h3 id="h2-form">Acesse sua conta</h3>
                 <button class="btn-facebook"><i class="fa fa-facebook-square icon"></i><strong>Login </strong>com o <strong>facebook</strong></button>
-                <input id="email"class="input-form" type="email" placeholder="Email:" name="email" required>
+                <input id="email"class="input-form" type="email" placeholder="Email:" name="email" required >
                 <input  class="input-form" type="password" placeholder="Senha:" name="senha" required>
                 <input type="submit" class="btn btn-form" value="Entrar" name="botao-login">
                 <span><a id="esqueceu-senha" href="#">Esqueceu sua senha?</a></span>
