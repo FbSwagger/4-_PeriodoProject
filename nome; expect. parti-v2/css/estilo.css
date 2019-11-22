@@ -1,5 +1,7 @@
 body {
-    background:#f7f7f7; 
+    margin: 0;
+    padding: 0;
+    background:rgb(171, 174, 175); 
 } 
 
 .box2 {
@@ -13,7 +15,7 @@ body {
     text-align: right;
     width:450px;
     height:300px;
-    background:rgb(208, 211, 212);
+    background:#f7f7f7;
     margin:150px auto; 
 } 
 
@@ -49,24 +51,18 @@ body {
 select::-ms-expand { display: none;
 } /* Remove seta padrão do IE*/
 
-/*---------------> SVG <----------------*/
-#svg-tela { 
-    height: 630px;
-    width: 680px;
-    
-}
+ 
 
 /* nav - bar */ 
 nav {
     display: flex;
-    flex-direction: row; 
     background-color: rgba(4,9,30,0.85);
     color: rgb(212, 200, 200);
     height: 60px;
     align-items: center;
     padding: 11px;
     justify-content: space-between;
-    box-shadow: 1px 0.5px 4px #999;	  
+    box-shadow: 1px 0.5px 4px #999;  
 }
 
 #logo{
@@ -79,7 +75,7 @@ form input{
     padding: 15px;
     border-radius: 8px;
     border: none;
-    background:rgb(171, 174, 175);
+    background:#d3d1d1;
  }
 
 .btn{
