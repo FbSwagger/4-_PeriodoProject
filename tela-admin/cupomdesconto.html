@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+ 
+
+ 
+
+    fieldset {
+   
+      background-color:rgb(240, 238, 233);
+      width:25%;
+  margin:18%;
+      border-radius: 20px;
+      height: 20px;
+      padding: 8px;
+
+    }
+
+ 
+
+  </style>
+
+
+
+
+<fieldset>
+        
+            
+    <script>
+
+
+function NumeroAleatorio() {
+    while (true) {
+      
+      var numero = new Uint8Array(1);
+      window.crypto.getRandomValues(numero);
+      
+      if (numero >= 1 && numero <= 100000) {
+        return numero *123456;
+      }
+    }
+  }
+       document.write('Codigo do Cupom de desconto: '+NumeroAleatorio())
+  </script>
+</fieldset>
+
+
+</head>
+  </html>
