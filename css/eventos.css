@@ -4,9 +4,11 @@ body {
     background:#f7f7f7;
     font-family:'PT Sans', sans-serif;
     height: 100%;
+    
 } 
-
-
+#filtro{
+    
+}
 .box2 {
       text-align:center;
       position:relative;
@@ -15,10 +17,10 @@ body {
 }
 
 .box { 
-
+    
     padding: 40px;
-    text-align: right;
-    width:450px;
+    text-align: center;
+    width:98%;
     height:auto;
     background:#fff;
     margin:110px auto; 
@@ -57,7 +59,7 @@ select::-ms-expand { display: none;
 }
 
 /* nav - bar */ 
-#nav-bar{
+nav {
     display: flex;
     flex-direction: row; 
     background-color: rgba(4,9,30,0.85);
@@ -68,27 +70,7 @@ select::-ms-expand { display: none;
     justify-content: space-between;
     box-shadow: 1px 0.5px 4px #999;	  
 }
-#menu{
-    list-style: none;
-    display:inline-flex;
-    padding: 20px;
-}
 
-#menu li{
-    padding: 10px;
-    font-weight: 400;
-}
-#menu a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    font-family: Poppins;
-}
-#menu li a:hover{
-    background-color:#8ab92d;
-    padding: 10px 6px 10px 6px;
-
-}   
 #logo{
     cursor: pointer;
 
@@ -122,19 +104,3 @@ input{
 }
 
 
-footer{
-    background-color: #233242;
-    
-    
-    display: block;
-    
-    text-align: center;
-  
-    height: 100px;
-
-}
-footer p{
-    font-weight: 700;
-    color: white;
-    padding: 40px;
-}

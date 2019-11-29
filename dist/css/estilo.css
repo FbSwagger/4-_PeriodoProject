@@ -13,6 +13,7 @@
 .btn-verde{
     background-color: #8ab92d ;
     color: #fff;
+    margin: 5px;
 }
 .space{
     padding: 20px;
@@ -26,3 +27,7 @@
     color: #fff;
 }
 
+#cor{
+    background-color: #233242;
+    color: #fff;
+}

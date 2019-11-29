@@ -19,6 +19,26 @@ nav{
 #logo{
     cursor: pointer;
 }
+#menu{
+    list-style: none;
+    display:inline-flex;
+    padding: 20px;
+}
+
+#menu li{
+    padding: 10px;
+    font-weight: 400;
+}
+#menu a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px;
+}
+#menu li:hover{
+    background-color:#8ab92d;
+    
+}   
 /*---------------> SVG <----------------*/
 #svg-login{
  width: 600px;
@@ -27,11 +47,11 @@ nav{
 .btn{
     font-weight: bold;
     border: none;
-    width: 100px;
+    width: 30px;
     padding: 10px;
     color: #fff;
+    
 
-    border-radius: 8px;
     background:#8ab92d;   
     cursor: pointer; 
 }

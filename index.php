@@ -40,7 +40,7 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="#home">Página principal</a></li>
-				          <li><a href="#videos">Eventos</a></li>
+				          <li><a href="http://localhost/projeto/eventos.php">Eventos</a></li>
 				          <li><a href="#speakers">Publicações</a></li>
 				          <li><a href="#schedule">Ajuda</a></li>
 				          <li><a href="http://localhost/projeto/criar-evento.php">Criar Evento</a></li>
@@ -62,11 +62,21 @@
 							<h1 class="text-white">
 								Crie seu evento hoje mesmo !			
 							</h1>
-							
+							<a class="ticker-btn text-white butao-criar " herf="http://localhost/projeto/criar-evento.php">Crie seu evento</a>
 						</div>											
 					</div>
 				</div>
+				
 			</section>
+			<section>
+
+				<h2>Gerencie seu evento</h2>
+
+
+			</section>
+			<footer>
+				<p>Todos os direitos reservados</p>
+			</footer>
 			<!-- End banner Area -->				
 	
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>

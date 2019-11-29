@@ -22,7 +22,7 @@
             <input id="email_cad" name="email_email" placeholder="Email:"  type="email"  /> 
            
             <div class="butoes">
-                    <button class="btn">Voltar</button>
+                    <button href="http://localhost/projeto/criar-evento.php" class="btn">Voltar</button>
                     <input  type="submit" class="btn" value="Criar evento" /> 
             </div>
             
