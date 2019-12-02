@@ -1,6 +1,8 @@
 <?php
     include('conexao.php');
     
+    
+    session_start();
 
     $email = mysqli_real_escape_string($conexao, $_POST['email']);
     $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
@@ -13,10 +15,15 @@
     if($row == 1){
        
          header('Location: painel.php');
+         session_start();
+         $_SESSION["a"] = "Logado";
+         
+         
         exit();
     }elseif ($row == 0) {
-        header('Location: login.php');
-    }
+       header('Location:login.php');
+        
+    };
     
    
     

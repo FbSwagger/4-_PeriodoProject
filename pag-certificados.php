@@ -1,16 +1,8 @@
-
 <!DOCTYPE html>
-<?php
-    include('conexao.php');
-    $consulta = "SELECT * FROM atividades";
-    $con = $conexao->query($consulta) or die($conexao->error);
 
-?>
 
 <html dir="ltr" lang="pt-br">
 
-
-  
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +17,8 @@
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
-    <link href="./dist/css/estilo.css" rel="stylesheet">
+    <link href="./css/pag-certificados.css" rel="stylesheet">
+    
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -214,7 +207,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Atividades</h4>
+                        <h4 class="page-title">Certificados</h4>
                     </div>
                     
                 </div>
@@ -228,25 +221,20 @@
             <div class="container-fluid">
                 <!-- ============================================================== -->
                 <!-- Email campaign chart -->
-                
+                <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-md-8">
                         <div  ng-controller="Atividade">
                             <ul class="nav nav-tabs space">
                                 <li class="">
-                                    <button type="button" class="btn btn-secondary">Atividades</button>
+                                    <a href="http://localhost/projeto/painel.php"><button type="button" class="btn btn-secondary">Criar certificado</button></a>
                                 </li>
                                 <li class="">
-                                    <button type="button" class="btn btn-light">Convidados</button>
+                                    <button type="button" class="btn btn-light">Enviar por email</button>
                                 </li>
+                            
                                 <li class="">
-                                     <button type="button" class="btn btn-light">Locais</button>
-                                </li>
-                                <li class="">
-                                    <a href="http://localhost/projeto/cupom.php"><button type="button" class="btn btn-light">Cupons de descontos</button></a>
-                                </li>
-                                <li class="">
-                                    <button type="button" class="btn btn-light">Configuração</button>
+                                    <button type="button" class="btn btn-light">Configurar modelo</button>
                                 </li>
 
 
@@ -258,152 +246,56 @@
                    
                     
                 </div>
-
-                <div class="row">
-                        <h4 id="text-atividade">Atividades</h4>
-                        <form action="adicionar.php" method="POST" class="form-inline pull-right ng-pristine ng-valid">
-                                <!---->
-                                <div class="form-group">
-                                    <select ng-model="filtro.necessitaInscricao" ng-change="filtrarAtividade(); " class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                        <option ng-value="null" value="object:null" selected="selected">Todas as atividades</option>
-                                        <option ng-value="true" value="boolean:true">Atividades com inscrição</option>
-                                        <option ng-value="false" value="boolean:false">Atividades sem inscrição</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input ng-model="filtro.busca" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Buscar" ng-change="filtrarAtividade();">
-                                </div>
-                                <div class="form-group">
-                                  
-                                </div>
-                                <div class="form-group">
-                                    <div class="dropdown">
-                                        </button>
-                                        <ul class="dropdown-menu space" aria-labelledby="dropdownMenu1">
-                                            <li>
-                                                <a href="#" target="_blank">Atividades</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank">Inscritos</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-verde" data-toggle="modal" data-target="#ModalLongoExemplo" >
-                                        <i class="mdi mdi-plus"></i>
-                                        Adicionar Atividade
-                                    </button>
-                                    <!-- Botão para acionar modal -->
-
-                                        
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header header-modal">
-                                                <h5 class="modal-title" id="TituloModalLongoExemplo">Adicionar Atividade</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                   
-                                                        <div class="input-group mb-3">
-                                                                <div class="input-group-prepend">
-                                                                  <span class="input-group-text" id="inputGroup-sizing-default">Titulo</span>
-                                                                </div>
-                                                                <input name="nome-atividade" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                        </div>
-                                                        <div class="row">
-                                                            
-                                                            <div class="form-group space">
-                                                                    <select name="tipo-atividade" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Defina o tipo</option>
-                                                                        <option ng-value="true" value="Apresentação cultural">Apresentação cultural</option>
-                                                                        <option ng-value="false" value="Palestra">Palestra</option>
-                                                                        <option ng-value="false" value="workshop">Workshop</option>
-                                                                        <option ng-value="false" value="workshop">MiniCurso</option>
-                                                                    </select>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                    <select name="atividade-valor" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Inscrição</option>
-                                                                        <option ng-value="true" value="gratuita">Gratuita</option>
-                                                                        <option ng-value="false" value="paga">Paga</option>
-                                                                        <option ng-value="false" value="não requer">Não requer inscrição</option>
-                                                                    </select>
-                                                            </div>
-                                                            <div class="form-group space">
-                                                                    <select  name="atividade-duracao" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Duração em dias</option>
-                                                                        <option ng-value="true" value="1">1</option>
-                                                                        <option ng-value="false" value="2">2</option>
-                                                                        <option ng-value="false" value="3">3</option>
-                                                                    </select>
-                                                            </div>
-                                                           
-                                                           
-                                                        </div>
-                                                    
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                                            <button type="submit" class="btn btn-verde">Salvar Atividade</button>
-                                                        </div>
-                                                 
-                                                        
-                                                </div>
-                                                   
-                                            </div>
-                                            </div>
-                                        </div>
-                                </div>
-                        </form>
-                            <div class="row">
-                                
-
-
-                                        <table class="table tabela-size">
-                                        <thead id="cor" >
+                <!-- ============================================================== -->
+                <!-- Email campaign chart -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Ravenue - page-view-bounce rate -->
+                <!-- ============================================================== -->
+                
+                <!-- ============================================================== -->
+                <!-- Ravenue - page-view-bounce rate -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+                <div id="container-certificado" class="row">
+   
+                     <button id="btn-verde" type="button" class="btn"> <i class="mdi mdi-plus"></i>Novo certificado</button>
+                    
+                 </div>
+                     <table class="table">
+                                        <thead  id="table-cabecalho">
                                             <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">Tipo</th>
-                                            <th scope="col">Valor</th>
-                                            <th scope="col">Duração</th>
+                                            <th scope="col">Titulo</th>
+                                            <th scope="col">Modelo</th>
+                                            <th scope="col">Status</th>
+                                         
 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             
-                                               <?php while($dado = $con->fetch_array()){?>
+                                             
                                             
                                             <tr>
-                                                <td><?php echo $dado["id_atividade"] ?></td>
-                                                <td><?php echo $dado["nome_atividade"] ?></td>
-                                                <td><?php echo $dado["tipo_atividade"] ?></td>
-                                                <td><?php echo $dado["status_valor"] ?></td>
-                                                <td><?php echo $dado["duracao_atividade"] ?></td>
+                                                
                                             </tr>
-                                               <?php } ?>   
-                                          
+                                         
                                         </tbody>
                                         </table>
 
-                                </div>
-                           
-
                     <!-- column -->
-                    
-                                <!-- Comment Row -->
+                   
+                         <!-- Comment Row -->
                                 
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- footer -->
-            <!-- ============================================================== -->
-       
+          
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
