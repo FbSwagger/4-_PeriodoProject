@@ -1,0 +1,25 @@
+
+
+<style>
+                        form{
+                            display:flex;
+                            flex-direction: 
+                        }
+                        .input{
+                            border:none;
+                            padding: 10px;
+                        }
+                        .btn-cupom{
+                            font-weight: bold;
+                            border: none;
+                            width: 50%;
+                            margin: 2px;
+                            padding: 9px;
+                            color: #fff;
+                            
+                            border-radius: 2px;
+                            background:#8ab92d;   
+                            cursor: pointer; 
+                        }
+                    </style>
+                
