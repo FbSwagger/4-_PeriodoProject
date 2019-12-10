@@ -6,6 +6,22 @@
     
     
 }
+.btn-verde{
+    background-color: #8ab92d;
+    color: white;
+    margin-top: 0px;
+    margin-left: 10px;
+    
+    
+}
+.modal-verde{
+    background-color: #8ab92d;
+    color: white;
+}
+#select-modal{
+    margin-left: 10px;
+    width: 470px;
+}
 #container-certificado{
 
    

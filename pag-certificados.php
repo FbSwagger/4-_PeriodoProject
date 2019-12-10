@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+<?php
+    include('conexao.php');
+    $consulta = "SELECT * FROM certificados";
+    $con = $conexao->query($consulta) or die($conexao->error);
 
+?>
 
 <html dir="ltr" lang="pt-br">
 
@@ -227,7 +232,7 @@
                         <div  ng-controller="Atividade">
                             <ul class="nav nav-tabs space">
                                 <li class="">
-                                    <a href="http://localhost/projeto/painel.php"><button type="button" class="btn btn-secondary">Criar certificado</button></a>
+                                    <a href="http://localhost/projeto/pag-certificados.php"><button type="button" class="btn btn-secondary">Criar certificado</button></a>
                                 </li>
                                 <li class="">
                                     <button type="button" class="btn btn-light">Enviar por email</button>
@@ -261,28 +266,96 @@
                 <!-- ============================================================== -->
                 <div id="container-certificado" class="row">
    
-                     <button id="btn-verde" type="button" class="btn"> <i class="mdi mdi-plus"></i>Novo certificado</button>
-                    
+                    <form action="pag-certificados.php" method="POST">
+                     <div class="form-group">
+                        <button id="btn-verde" type="button" class="btn" data-toggle="modal" data-target="#ModalLongoExemplo"> <i class="mdi mdi-plus"></i>Novo certificado</button>
+                                    <!-- Botão para acionar modal -->
+
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header header-modal modal-verde">
+                                                <h5 class="modal-title" id="TituloModalLongoExemplo">Adicionar Certificado</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                   
+                                                        <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                  <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+                                                                </div>
+                                                                <input name="nome-certificado" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
+                                                        </div>
+                                                        <div class="row">
+                                                            
+                                                            <div class="form-group space">
+                                                                    <select id="select-modal" name="tipo-pessoa" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
+                                                                        <option ng-value="null" value="object:null" selected="selected">Certificado para</option>
+                                                                        <option ng-value="true" value="Participantes">Participantes</option>
+                                                                        <option ng-value="false" value="Palestrantes">Palestrantes</option>
+                                                                        <option ng-value="false" value="Organizadores">Organizadores</option>
+                                                                        
+                                                                    </select>
+                                                            </div>
+                                                            <div class="form-group space">
+                                                                    <select id="select-modal" name="tipo-modelo" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
+                                                                        <option ng-value="null" value="object:null" selected="selected">Modelo do certificado</option>
+                                                                        <option ng-value="true" value="padrão">Padrão</option>
+                                                                        
+                                                                        
+                                                                    </select>
+                                                            </div>
+                                                           
+                                                           
+                                                           
+                                                        </div>
+                                                    
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                                            <button type="submit" class="btn btn-verde">Salvar Atividade</button>
+                                                        </div>
+                                                 
+                                                        
+                                                </div>
+                                                   
+                                            </div>
+                                            </div>
+                                        </div>
+                                </div>
+                    </form>
                  </div>
                      <table class="table">
                                         <thead  id="table-cabecalho">
                                             <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Titulo</th>
+                                            <th scope="col">Tipo pessoa</th>
                                             <th scope="col">Modelo</th>
-                                            <th scope="col">Status</th>
+                                            <th scope="col">Ver</th>
+                                            
+                                            
                                          
 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             
-                                             
+                                         <?php while($dado = $con->fetch_array()){?>
                                             
                                             <tr>
+                                                <td><?php echo $dado["id_certificado"] ?></td>
+                                                <td><?php echo $dado["titulo_certificado"] ?></td>
+                                                <td><?php echo $dado["tipo_pessoa"] ?></td>
+                                                <td><?php echo $dado["modelo"] ?></td>
+                                                 <td> <button type="button " class="btn"><a  href="./img/certificado.jpg">Ver certificado</a></button></td>
+                                                
                                                 
                                             </tr>
-                                         
+                                            <?php } ?>  
                                         </tbody>
                                         </table>
 

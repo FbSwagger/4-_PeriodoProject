@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+    include('conexao.php');
+    $consulta = "SELECT * FROM eventos";
+    $con = $conexao->query($consulta) or die($conexao->error);
+
+?>
     <html>
         <head>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -62,12 +68,21 @@
                         </div>
                 </div>
             <div class="box effect1">  
-                 <Ul>
-                     <li>A </li>
-                 </Ul>
+                
                    
 
-
+           <?php while($dado = $con->fetch_array()){?>
+                                            
+                                            <ul id="lista-eventos">
+                                                <li><?php echo $dado["id_evento"] ?></li>
+                                                <li><?php echo $dado["nome_evento"] ?></li>
+                                                <li><?php echo $dado["quant_participantes"] ?></li>
+                                                <li><?php echo $dado["nome_user"] ?></li>
+                                               <hr>
+                                                
+                                               
+                                            </ul>
+                                    <?php } ?> 
                 
 
                  

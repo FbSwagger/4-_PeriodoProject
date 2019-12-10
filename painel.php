@@ -261,7 +261,7 @@
 
                 <div class="row">
                         <h4 id="text-atividade">Atividades</h4>
-                        <form action="adicionar.php" method="POST" class="form-inline pull-right ng-pristine ng-valid">
+                        <form action="adicionar-atividade.php" method="POST" class="form-inline pull-right ng-pristine ng-valid">
                                 <!---->
                                 <div class="form-group">
                                     <select ng-model="filtro.necessitaInscricao" ng-change="filtrarAtividade(); " class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
@@ -342,6 +342,19 @@
                                                                         <option ng-value="false" value="3">3</option>
                                                                     </select>
                                                             </div>
+                                                            <div class="form-group space">
+                                                                    <select  name="atividade-sala" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
+                                                                        <option ng-value="null" value="object:null" selected="selected">Sala</option>
+                                                                        <option ng-value="true" value="1">1</option>
+                                                                        <option ng-value="false" value="2">2</option>
+                                                                        <option ng-value="false" value="3">3</option>
+                                                                    </select>
+                                                            </div>
+                                                           <input name="atividade-data" class="form-control padd" type="date">
+                                                           <input name="atividade-hora" class="form-control padd" type="time">
+                                                           <input name="atividade-carga" class="form-control padd" type="text" placeholder="Carga horária">
+
+
                                                            
                                                            
                                                         </div>
@@ -371,6 +384,10 @@
                                             <th scope="col">Tipo</th>
                                             <th scope="col">Valor</th>
                                             <th scope="col">Duração</th>
+                                            <th scope="col">Horário</th>
+                                            <th scope="col">data</th>
+                                            <th scope="col">sala</th>
+                                            <th scope="col">Carga horária</th>
 
                                             </tr>
                                         </thead>
@@ -383,7 +400,12 @@
                                                 <td><?php echo $dado["nome_atividade"] ?></td>
                                                 <td><?php echo $dado["tipo_atividade"] ?></td>
                                                 <td><?php echo $dado["status_valor"] ?></td>
-                                                <td><?php echo $dado["duracao_atividade"] ?></td>
+                                                <td><?php echo $dado["duracao_atividade"],' horas' ?></td>
+                                                <td><?php echo $dado["hora"] ?></td>
+                                                <td><?php echo $dado["data_atividade"] ?></td>
+                                                <td><?php echo $dado["sala"] ?></td>
+                                                <td><?php echo $dado["carga"], ' horas'?></td>
+                                               
                                             </tr>
                                                <?php } ?>   
                                           
