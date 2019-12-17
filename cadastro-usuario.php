@@ -13,15 +13,15 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <a href="http://localhost/projeto/"><img id="logo" src="./img/logo.png"></a>
+        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/logo.png"></a>
         <ul id="menu">
-            <li><a href="http://localhost/projeto/">Home</a></li>
-            <li><a href="http://localhost/projeto/Eventos.php">Eventos</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
             <li><a href="#">Publicações</a></li>
             <li><a href="#">Ajuda</a></li>
-            <li><a href="http://localhost/projeto/criar-evento.php">Criar eventos</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar eventos</a></li>
             <li>
-              <a class="btn" href="http://localhost/projeto/login.php">Login</a>
+              <a class="btn" href="http://localhost/4-_PeriodoProject/login.php">Login</a>
             </li>
         </ul>
 
@@ -37,7 +37,7 @@
                 <input  class="input-form" type="email" placeholder="Email Pessoal:" autocomplete="off" name="email" >
                 <input  class="input-form" type="password" placeholder="Senha:" name="senha" >
                 <input type="submit" class="btn btn-form" value="Criar conta" name="botao-login">
-                <span><a id="esqueceu-senha" href="http://localhost:3000/login">Já possui conta?</a></span>
+                <span><a id="esqueceu-senha" href="http://localhost/4-_PeriodoProject/login.php">Já possui conta?</a></span>
             </form>
             
         </div>

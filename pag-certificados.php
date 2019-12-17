@@ -142,12 +142,12 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                            <li class="sidebar-item">
-                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/projeto/painel.php" aria-expanded="false">
-                                        <i class="mdi mdi-store"></i>
-                                        <span class="hide-menu">Home</span>
-                                    </a>
-                                </li>
+                    <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/projeto/painel.php" aria-expanded="false">
+                                <i class="mdi mdi-calendar"></i>
+                                <span class="hide-menu">Programação</span>
+                            </a>
+                        </li>
                     
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
@@ -162,12 +162,7 @@
                                 <span class="hide-menu">Inscrições</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-calendar"></i>
-                                <span class="hide-menu">Programação</span>
-                            </a>
-                        </li>
+                       
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                                 <i class="mdi mdi-file-document"></i>
@@ -266,7 +261,7 @@
                 <!-- ============================================================== -->
                 <div id="container-certificado" class="row">
    
-                    <form action="pag-certificados.php" method="POST">
+                    <form action="gerar_certificado/gerador.php" method="POST">
                      <div class="form-group">
                         <button id="btn-verde" type="button" class="btn" data-toggle="modal" data-target="#ModalLongoExemplo"> <i class="mdi mdi-plus"></i>Novo certificado</button>
                                     <!-- Botão para acionar modal -->
@@ -288,35 +283,34 @@
                                                                 <div class="input-group-prepend">
                                                                   <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
                                                                 </div>
-                                                                <input name="nome-certificado" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
+                                                                <input name="nome" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
                                                         </div>
-                                                        <div class="row">
-                                                            
-                                                            <div class="form-group space">
-                                                                    <select id="select-modal" name="tipo-pessoa" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Certificado para</option>
-                                                                        <option ng-value="true" value="Participantes">Participantes</option>
-                                                                        <option ng-value="false" value="Palestrantes">Palestrantes</option>
-                                                                        <option ng-value="false" value="Organizadores">Organizadores</option>
-                                                                        
+                                                            <div class="row">
+                                                            <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                                                                    </div>
+                                                                    <input name="email" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                  <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
+                                                                </div>
+                                                                <input name="cpf" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                                    <select name="atividade" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
+                                                                        <option ng-value="null" value="object:null" selected="selected">Atividade</option>
+                                                                        <option ng-value="true" value="Minicurso">Minicurso</option>
+                                                                        <option ng-value="false" value="palestra">Palestra</option>
+                                                                        <option ng-value="false" value="workshop">Workshop</option>
                                                                     </select>
                                                             </div>
-                                                            <div class="form-group space">
-                                                                    <select id="select-modal" name="tipo-modelo" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Modelo do certificado</option>
-                                                                        <option ng-value="true" value="padrão">Padrão</option>
-                                                                        
-                                                                        
-                                                                    </select>
-                                                            </div>
-                                                           
-                                                           
-                                                           
-                                                        </div>
-                                                    
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                                            <button type="submit" class="btn btn-verde">Salvar Atividade</button>
+                                                            <button type="submit" class="btn btn-verde">Gerar</button>
                                                         </div>
                                                  
                                                         
@@ -351,7 +345,7 @@
                                                 <td><?php echo $dado["titulo_certificado"] ?></td>
                                                 <td><?php echo $dado["tipo_pessoa"] ?></td>
                                                 <td><?php echo $dado["modelo"] ?></td>
-                                                 <td> <button type="button " class="btn"><a  href="./img/certificado.jpg">Ver certificado</a></button></td>
+                                                 <td> <button type="button " class="btn"><a  href="./img/certificado ES.jpg">Ver certificado</a></button></td>
                                                 
                                                 
                                             </tr>

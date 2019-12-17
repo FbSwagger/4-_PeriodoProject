@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="br">
-<?php
- session_start();
+<?
+
 ?>
 <head>
     <meta charset="UTF-8">
@@ -15,13 +15,15 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <a href="http://localhost/projeto/"><img id="logo" src="./img/download.png"></a>
+        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/download.png"></a>
         <ul id="menu">
-            <li><a href="http://localhost/projeto/">Home</a></li>
-            <li><a href="http://localhost/projeto/Eventos.php">Eventos</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject
+            
+            /">Home</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
             <li><a href="#">Publicações</a></li>
             <li><a href="#">Ajuda</a></li>
-            <li><a href="http://localhost/projeto/criar-evento.php">Criar eventos</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar eventos</a></li>
            
             <li>
               <a class="btn" href="http://localhost/projeto/cadastro-usuario.php">Cadastre-se</a>

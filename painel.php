@@ -2,6 +2,11 @@
 <!DOCTYPE html>
 <?php
     include('conexao.php');
+
+
+
+   
+
     $consulta = "SELECT * FROM atividades";
     $con = $conexao->query($consulta) or die($conexao->error);
 
@@ -63,7 +68,7 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="http://localhost/projeto/painel.php" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
@@ -121,7 +126,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="http://localhost/projeto/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
                 
                             </div>
                         </li>
@@ -144,12 +149,13 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                            <li class="sidebar-item">
-                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/projeto/painel.php" aria-expanded="false">
-                                        <i class="mdi mdi-store"></i>
-                                        <span class="hide-menu">Home</span>
-                                    </a>
-                                </li>
+                    <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/painel.php" aria-expanded="false">
+                                <i class="mdi mdi-calendar"></i>
+                                <span class="hide-menu">Programação</span>
+                            </a>
+                        </li>
+                         
                     
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
@@ -164,20 +170,10 @@
                                 <span class="hide-menu">Inscrições</span>
                             </a>
                         </li>
+                      
+                       
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-calendar"></i>
-                                <span class="hide-menu">Programação</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-file-document"></i>
-                                <span class="hide-menu">Submissões</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/projeto/pag-certificados.php" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/pag-certificados.php" aria-expanded="false">
                                 <i class="mdi mdi-school"></i>
                                 <span class="hide-menu">Certificados</span>
                             </a>
@@ -243,7 +239,7 @@
                                      <button type="button" class="btn btn-light">Locais</button>
                                 </li>
                                 <li class="">
-                                    <a href="http://localhost/projeto/cupom.php"><button type="button" class="btn btn-light">Cupons de descontos</button></a>
+                                    <a href="http://localhost/4-_PeriodoProject/cupom.php"><button type="button" class="btn btn-light">Cupons de descontos</button></a>
                                 </li>
                                 <li class="">
                                     <button type="button" class="btn btn-light">Configuração</button>
