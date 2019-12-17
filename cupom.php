@@ -56,7 +56,7 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="http://localhost/projeto/painel.php" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
@@ -138,7 +138,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                             <li class="sidebar-item">
-                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../tela-admin(MENU COMPLETO)/nice-html/ltr/index.html" aria-expanded="false">
+                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/painel.php" aria-expanded="false">
                                         <i class="mdi mdi-store"></i>
                                         <span class="hide-menu">Home</span>
                                     </a>
@@ -157,18 +157,7 @@
                                 <span class="hide-menu">Inscrições</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-calendar"></i>
-                                <span class="hide-menu">Programação</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-file-document"></i>
-                                <span class="hide-menu">Submissões</span>
-                            </a>
-                        </li>
+                     
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                                 <i class="mdi mdi-school"></i>
@@ -227,7 +216,7 @@
                         <div  ng-controller="Atividade">
                             <ul class="nav nav-tabs space">
                                 <li class="">
-                                    <a href="http://localhost/projeto/painel.php"><button type="button" class="btn btn-light">Atividades</button></a>
+                                    <a href="http://localhost/4-_PeriodoProject/painel.php"><button type="button" class="btn btn-light">Atividades</button></a>
                                 </li>
                                 <li class="">
                                     <button type="button" class="btn btn-light">Convidados</button>

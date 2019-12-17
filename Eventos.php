@@ -22,7 +22,7 @@
         <body>
 
                 <nav id="nav-bar">
-                        <a href="http://localhost/projeto/"><img id="logo" src="img/logo.png"></a>
+                        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="img/logo.png"></a>
                 </nav>
                 
                 <div id="filtro">

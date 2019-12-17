@@ -1,5 +1,5 @@
 	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
+	<html lang="pt-br" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,16 +35,16 @@
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="http://localhost:2000/"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="http://localhost/4-_PeriodoProject"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="#home">Página principal</a></li>
-				          <li><a href="http://localhost/projeto/eventos.php">Eventos</a></li>
+				          <li><a href="http://localhost/4-_PeriodoProject/eventos.php">Eventos</a></li>
 				          <li><a href="#speakers">Publicações</a></li>
 				          <li><a href="#schedule">Ajuda</a></li>
-				          <li><a href="http://localhost/projeto/criar-evento.php">Criar Evento</a></li>
-				          <li><a class="ticker-btn" href="http://localhost/projeto/login.php">Login</a></li>
+				          <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar Evento</a></li>
+				          <li><a class="ticker-btn" href="http://localhost/4-_PeriodoProject/login.php">Login</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -62,7 +62,7 @@
 							<h1 class="text-white">
 								Crie seu evento hoje mesmo !			
 							</h1>
-							<a class="ticker-btn text-white butao-criar " herf="http://localhost/projeto/criar-evento.php">Crie seu evento</a>
+							<a class="ticker-btn text-white butao-criar " herf="http://localhost/4-_PeriodoProject/criar-evento.php">Crie seu evento</a>
 						</div>											
 					</div>
 				</div>
