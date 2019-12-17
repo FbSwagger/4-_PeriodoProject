@@ -39,9 +39,9 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Página principal</a></li>
+				          <li class="menu-active"><a href="http://localhost/4-_PeriodoProject/">Página principal</a></li>
 				          <li><a href="http://localhost/4-_PeriodoProject/eventos.php">Eventos</a></li>
-				          <li><a href="#speakers">Publicações</a></li>
+				         
 				          <li><a href="#schedule">Ajuda</a></li>
 				          <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar Evento</a></li>
 				          <li><a class="ticker-btn" href="http://localhost/4-_PeriodoProject/login.php">Login</a></li>

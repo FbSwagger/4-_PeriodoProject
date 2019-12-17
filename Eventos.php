@@ -73,15 +73,18 @@
 
            <?php while($dado = $con->fetch_array()){?>
                                             
-                                            <ul id="lista-eventos">
-                                                <li><?php echo $dado["id_evento"] ?></li>
-                                                <li><?php echo $dado["nome_evento"] ?></li>
-                                                <li><?php echo $dado["quant_participantes"] ?></li>
-                                                <li><?php echo $dado["nome_user"] ?></li>
+                                            
                                                <hr>
                                                 
                                                
-                                            </ul>
+                                                    <div class="card" style="width: 18rem;">
+
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><?php echo $dado["nome_evento"] ?></h5>
+                                                        <p class="card-text"><?php echo $dado["quant_participantes"] ?></p>
+                                                    
+                                                    </div>
+                                                    </div>
                                     <?php } ?> 
                 
 

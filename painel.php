@@ -3,9 +3,9 @@
 <?php
     include('conexao.php');
 
+    echo($_SESSION['id']);
 
 
-   
 
     $consulta = "SELECT * FROM atividades";
     $con = $conexao->query($consulta) or die($conexao->error);
@@ -369,7 +369,7 @@
                                 </div>
                         </form>
                             <div class="row">
-                                
+                              
 
 
                                         <table class="table tabela-size">
