@@ -3,7 +3,6 @@
 <?php
     include('conexao.php');
 
-    echo($_SESSION['id']);
 
 
 
@@ -72,7 +71,7 @@
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
-                                <img src="./assets/images/download.png" alt="homepage" class="light-logo" />
+                                <img src="./img/EVENTOPI.png" alt="homepage" class="light-logo" />
                             </b>
                            
                         </a>

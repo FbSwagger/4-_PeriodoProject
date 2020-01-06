@@ -10,15 +10,15 @@
         <body>
 
                 <nav id="nav-bar">
-                    <a href="http://localhost/projeto/"><img id="logo" src="img/logo.png"></a>
+                    <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="img/EVENTOPI.png"></a>
                  <ul id="menu">
-                    <li><a href="http://localhost/projeto/">Home</a></li>
-                    <li><a href="http://localhost/projeto/Eventos.php">Eventos</a></li>
+                    <li><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
+                    <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
                     <li><a href="#">Publicações</a></li>
                     <li><a href="#">Ajuda</a></li>
                 
                     <li>
-                    <a class="btn" href="http://localhost/projeto/cadastro-usuario.php">Cadastre-se</a>
+                    <a class="btn" href="http://localhost/4-_PeriodoProject/cadastro-usuario.php">Cadastre-se</a>
                     </li>
                 </ul>
                 </nav>

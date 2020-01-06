@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/logo.png"></a>
+        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/EVENTOPI.png"></a>
         <ul id="menu">
             <li><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
             <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>

@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/download.png"></a>
+        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/EVENTOPI.png"></a>
         <ul id="menu">
             <li><a href="http://localhost/4-_PeriodoProject
             
@@ -26,7 +26,7 @@
             <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar eventos</a></li>
            
             <li>
-              <a class="btn" href="http://localhost/projeto/cadastro-usuario.php">Cadastre-se</a>
+              <a class="btn" href="http://localhost/4-_PeriodoProject/cadastro-usuario.php">Cadastre-se</a>
             </li>
         </ul>
     </nav>
