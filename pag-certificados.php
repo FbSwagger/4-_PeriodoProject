@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <?php
     include('conexao.php');
-    $consulta = "SELECT * FROM certificados";
-    $con = $conexao->query($consulta) or die($conexao->error);
+  
 
 ?>
 
@@ -61,11 +60,11 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="http://localhost/projeto/painel.php" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
-                                <img src="./assets/images/download.png" alt="homepage" class="light-logo" />
+                                <img src="img/EVENTOPI.png" alt="homepage" class="light-logo" />
                             </b>
                            
                         </a>
@@ -164,13 +163,7 @@
                         </li>
                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-file-document"></i>
-                                <span class="hide-menu">Submissões</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/projeto/pag-certificados.php" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/pag-certificados.php" aria-expanded="false">
                                 <i class="mdi mdi-school"></i>
                                 <span class="hide-menu">Certificados</span>
                             </a>
@@ -338,7 +331,7 @@
                                         </thead>
                                         <tbody>
                                             
-                                         <?php while($dado = $con->fetch_array()){?>
+                                         
                                             
                                             <tr>
                                                 <td><?php echo $dado["id_certificado"] ?></td>
@@ -349,7 +342,7 @@
                                                 
                                                 
                                             </tr>
-                                            <?php } ?>  
+                                            
                                         </tbody>
                                         </table>
 

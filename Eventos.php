@@ -17,13 +17,30 @@
                 <!-- Custom CSS -->
                 <link href="./dist/css/style.min.css" rel="stylesheet">
                 <link href="./dist/css/estilo.css" rel="stylesheet">
+                <link rel="Stylesheet" type="Text/css" href="css/estilo-login.css">
                 <script src="js/main.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
         </head>
         <body>
 
-                <nav id="nav-bar">
-                        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="img/EVENTOPI.png"></a>
-                </nav>
+        <nav >
+            <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/EVENTOPI.png"></a>
+            <ul id="menu">
+                <li><a href="http://localhost/4-_PeriodoProject
+                
+                /">Home</a></li>
+                <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar eventos</a></li>
+            
+                <li>
+                <a class="btn" href="http://localhost/4-_PeriodoProject/cadastro-usuario.php">Cadastre-se</a>
+                </li>
+            </ul>
+        </nav>
                 
                 <div id="filtro">
                 <h2 id="text-atividade">Eventos</h2><br><br>
