@@ -87,6 +87,7 @@ select::-ms-expand { display: none;
 #menu li a:hover{
     background-color:#8ab92d;
     padding: 10px 6px 10px 6px;
+    border-radius: 10px;
 
 }   
 #logo{
@@ -110,14 +111,15 @@ input{
  }
 
 .btn{
-    font-weight: bold;
-    border: none;
-    width: 73%;
-    padding: 15px;
-    color: #fff;
-
-    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    
     background:#8ab92d;   
+    border-radius: 10px;
+    
     cursor: pointer; 
 }
 

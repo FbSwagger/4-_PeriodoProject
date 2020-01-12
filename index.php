@@ -62,7 +62,10 @@
 							<h1 class="text-white">
 								Crie seu evento hoje mesmo !			
 							</h1>
-							<a class="ticker-btn text-white butao-criar " herf="http://localhost/4-_PeriodoProject/criar-evento.php">Crie seu evento</a>
+							<div>
+							<a class="botao text-white" href="http://localhost/4-_PeriodoProject/criar-evento.php">CRIAR EVENTO AGORA</a>
+							<div>
+							
 						</div>											
 					</div>
 				</div>

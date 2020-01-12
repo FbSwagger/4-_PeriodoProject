@@ -39,7 +39,7 @@ nav{
 }
 #menu li:hover{
     background-color:#8ab92d;
-    
+    border-radius: 16px;
 }
 /*--
 /*---------------> SVG <----------------*/
@@ -48,15 +48,14 @@ nav{
 }
 /* ---------------> BOTÕES <--------------------*/
 .btn{
-    font-weight:700 ;
-    border: none;
-    width: 100px;
-    padding: 15px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
     
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
     background:#8ab92d;   
+    border-radius: 16px;
     cursor: pointer; 
 }
 
