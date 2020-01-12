@@ -58,11 +58,11 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="http://localhost/projeto/painel.php" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
-                                <img src="./assets/images/download.png" alt="homepage" class="light-logo" />
+                                <img src="./img/EVENTOPI.png" alt="homepage" class="light-logo" />
                             </b>
                            
                         </a>
@@ -218,7 +218,7 @@
                         <div  ng-controller="Atividade">
                             <ul class="nav nav-tabs space">
                                 <li class="">
-                                    <a href="http://localhost/projeto/painel.php"><button type="button" class="btn btn-light">Atividades</button></a>
+                                    <a href="http://localhost/4-_PeriodoProject/painel.php"><button type="button" class="btn btn-light">Atividades</button></a>
                                 </li>
                                 <li class="">
                                     <button type="button" class="btn btn-light">Convidados</button>

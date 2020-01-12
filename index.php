@@ -69,11 +69,20 @@
 				
 			</section>
 			<section>
+			  <div class="sessao-1">
+					<div id="text-session1">
+						<h2>Gerencie seu evento</h2>
+						<p>Possibilitamos que você crie seu evento de forma fácil e faça o seu gerenciamento, possibilitando uma ótima experiência.</p>
+						<a class="ticker-btn text-white">Saber mais</a>
+					</div>
+					<div>
+						<img id="img-session1" src="img/undraw_schedule_pnbk.png">
 
-				<h2>Gerencie seu evento</h2>
-
-
+					</div>
+			  </div>
 			</section>
+			<section id="servicos">
+		     	
 			<footer>
 				<p>Todos os direitos reservados</p>
 			</footer>

@@ -3,6 +3,29 @@
     padding: 10px;
     margin-top: 20px;
 }
+
+.sessao-1{
+    background-color: #fff;
+    color: black ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    font-size: 15px;
+}
+.sessao-1 p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+#img-session1{
+    width: 100%;
+    
+}
+#text-session1{
+    margin-left: 30px;
+}
+
+
 footer{
       background-color: #233242;
     
@@ -17,6 +40,6 @@ footer{
 
 footer p{
     color: white;
-    padding: 40px;
+    padding: 39px;
     margin: 0px ;
 }
