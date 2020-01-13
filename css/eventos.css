@@ -115,13 +115,15 @@ footer p{
     align-items: center;
     justify-content: space-between;
 }
-
+#text-atividade{
+    padding-left: 20px;
+}
 /* -------> FORMATAÇÃO DO FORMULARIO <------------ */
 form{
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
     box-shadow: 2px 1px 5px rgba(107, 104, 104, 0.5);
     padding: 30px;
     background-color: #fff;
