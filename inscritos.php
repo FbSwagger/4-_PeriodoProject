@@ -18,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="">
     <title>Tela admin</title>
     <!-- Custom CSS -->
+    <link rel="shortcut icon"  href="img/favicon.ico" />
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">

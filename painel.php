@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <?php
     include('conexao.php');
-    include('login-verifica.php');
-
+     
 
 
     $consulta = "SELECT * FROM atividades";
@@ -25,6 +24,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="">
     <title>Tela admin</title>
+    <link rel="shortcut icon"  href="img/favicon.ico" />
     <!-- Custom CSS -->
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="row">
-                        <h4 id="text-atividade"><?php ?></h4>
+                        <h4 id="text-atividade"></h4>
                         <form action="adicionar-atividade.php" method="POST" class="form-inline pull-right ng-pristine ng-valid">
                                 <!---->
                                 <div class="form-group">
@@ -376,7 +376,7 @@
                                                <?php while($dado = $con->fetch_array()){?>
                                             
                                             <tr>
-                                                <td><?php echo $dado["id_atividade"] ?></td>
+                                                <td><?php echo $nome_user ?></td>
                                                 <td><?php echo $dado["nome_atividade"] ?></td>
                                                 <td><?php echo $dado["tipo_atividade"] ?></td>
                                                 <td><?php echo $dado["status_valor"] ?></td>
