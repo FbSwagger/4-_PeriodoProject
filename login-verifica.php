@@ -14,9 +14,9 @@
 
     if($row == 1){
     
-     
+          
     
-     
+    $nome = "SELECT nome from usuarios where email = '{$email}' and senha  = md5('{$senha}'"
       
            header('Location:painel.php');
      

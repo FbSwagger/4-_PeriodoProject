@@ -40,7 +40,7 @@
             <form action="login-verifica.php" method="POST">
                 <h1 id="h2-form">Bem vindo!</h1>
                 <h3 id="h2-form">Acesse sua conta</h3>
-                <button class="btn-facebook"><i class="fa fa-facebook-square icon"></i><strong>Login </strong>com o <strong>facebook</strong></button>
+               
                 <input id="email"class="input-form" type="email" placeholder="Email:" name="email" autocomplete="off" required >
                 <input  class="input-form" type="password" placeholder="Senha:" name="senha" required>
                 <input type="submit" class="btn btn-form" value="Entrar" name="botao-login">

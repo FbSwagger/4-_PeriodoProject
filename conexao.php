@@ -7,7 +7,5 @@
 
     $conexao = mysqli_connect(HOST, USUARIO, SENHA, BD) or die ('Não foi possivel conectar!');
     
-    
-
-
+   
 ?>
