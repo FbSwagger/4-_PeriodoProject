@@ -58,6 +58,25 @@ nav{
     cursor: pointer; 
 }
 
+footer{
+    background-color: #233242;
+  
+  
+  display: block;
+  
+  text-align: center;
+
+  height: 100px;
+  margin: 0px;
+}
+
+footer p{
+  color: white;
+  padding: 39px;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 0px ;
+}
 .btn-facebook{
    background: #3b5998;
    color: #fff;

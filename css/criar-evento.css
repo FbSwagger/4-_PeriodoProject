@@ -126,17 +126,20 @@ input{
 
 footer{
     background-color: #233242;
-    
-    
-    display: block;
-    
-    text-align: center;
   
-    height: 100px;
+  
+  display: block;
+  
+  text-align: center;
 
+  height: 100px;
+  margin: 0px;
 }
+
 footer p{
-    font-weight: 700;
-    color: white;
-    padding: 40px;
+  color: white;
+  padding: 39px;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 0px ;
 }

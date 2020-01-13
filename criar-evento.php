@@ -15,7 +15,6 @@
                  <ul id="menu">
                     <li><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
                     <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
-                    <li><a href="#">Publicações</a></li>
                     <li><a href="#">Ajuda</a></li>
                 
                     <li>

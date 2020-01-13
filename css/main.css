@@ -35,21 +35,21 @@
 
 
 footer{
-      background-color: #233242;
-    
-    
-    display: block;
-    
-    text-align: center;
+    background-color: #233242;
   
-    height: 100px;
-    margin: 0px;
-    font-family: Poppins;
-    font-weight: bold;
+  
+  display: block;
+  
+  text-align: center;
+
+  height: 100px;
+  margin: 0px;
 }
 
 footer p{
-    color: white;
-    padding: 39px;
-    margin: 0px ;
+  color: white;
+  padding: 39px;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 0px ;
 }
