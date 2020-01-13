@@ -46,7 +46,7 @@
    <div>
    <?php while($dado = $con->fetch_array()){?>
            <form action="matricula.php"  method="POST">
-                <img src="img/WORK.jpg " width="50%" >
+                <img id="img-evento" src="img/WORK.jpg "  >
                 <br>
                 <h1 id="h2-form"><?php echo $dado["nome_evento"] ?></h1>
                 <h3 id="h2-form">Organizador: <?php echo $dado["nome_user"] ?></h3>

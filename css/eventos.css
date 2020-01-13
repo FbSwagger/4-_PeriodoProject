@@ -136,6 +136,9 @@ form input{
    border: none;
    background:#D3D3D3;
 }
+#img-evento{
+    width: 350px;
+}
 #h2-form{
     color:black;
     margin-top: -20px;
