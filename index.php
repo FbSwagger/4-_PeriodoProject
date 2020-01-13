@@ -40,7 +40,7 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="http://localhost/4-_PeriodoProject/">Página principal</a></li>
+				          <li class="menu-active"><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
 				          <li><a href="http://localhost/4-_PeriodoProject/eventos.php">Eventos</a></li>
 				         
 				          <li><a href="#schedule">Ajuda</a></li>
