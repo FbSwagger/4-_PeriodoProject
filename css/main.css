@@ -44,6 +44,8 @@ footer{
   
     height: 100px;
     margin: 0px;
+    font-family: Poppins;
+    font-weight: bold;
 }
 
 footer p{
