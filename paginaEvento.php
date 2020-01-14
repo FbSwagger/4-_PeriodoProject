@@ -40,18 +40,30 @@
             </li>
         </ul>
     </nav>
-   
+    <?php while($dado = $con->fetch_array()){?>
+         
+       <br>
+        <form action="boletophp-master/boleto_bb.php" method="POST">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+               <h2>Preencha os campos para fazer sua inscrição no evento: <?php echo $dado["nome_evento"] ?></h2>
+               
+                <input id="email"class="input-form" type="text" placeholder="Nome Completo:" name="nome" autocomplete="off" required >
+                <input  class="input-form" type="email" placeholder="E-mail válido:" name="email" required>
+                <input  class="input-form" type="text" placeholder="Telefone:" name="telefone" required>
+                <input  class="input-form" type="text" placeholder="CPF:" name="cpf" required>
+                <input type="submit" class="btn btn-form" value="Participar" name="botao-login">
+              
+            </form>
+              
+                
+         
+            <br>
+                                                    
+                                           
+    <?php } ?>   
     
-
-
             
+   
         
                 
 

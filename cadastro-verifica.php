@@ -13,7 +13,7 @@
     $resultado = mysqli_query($conexao, $result_usuario);
     header('Location:login.php');
 
-    
+
 
 
 
