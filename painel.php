@@ -84,7 +84,7 @@
                     <!-- ============================================================== -->
                     <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="ti-more"></i>
+                        
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -98,7 +98,7 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-
+                        <h2>Página do administrador</h2>
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -110,7 +110,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
+                            <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/user.php"><i class="ti-user m-r-5 m-l-5"></i>Mudar para participante</a>
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class=""></i>Sair</a>
                 
                             </div>
                         </li>
@@ -314,6 +315,15 @@
                                                                         <option ng-value="false" value="não requer">Não requer inscrição</option>
                                                                     </select>
                                                             </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-4">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text" autocomplete="off" id="">R$</span>
+                                                                    </div>
+                                                                    <input name="valor" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
+                                                                </div>
+
+                                                            </div>
                                                             <div class="form-group space">
                                                                     <select  name="atividade-duracao" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
                                                                         <option ng-value="null" value="object:null" selected="selected">Duração em dias</option>
@@ -330,9 +340,17 @@
                                                                         <option ng-value="false" value="3">3</option>
                                                                     </select>
                                                             </div>
-                                                           <input name="atividade-data" class="form-control padd" type="date">
-                                                           <input name="atividade-hora" class="form-control padd" type="time">
-                                                           <input name="atividade-carga" class="form-control padd" type="text" placeholder="Carga horária">
+
+                                                            <div class="form-group">
+                                                                    <input name="atividade-data" class="form-control padd" type="date">
+                                                                    <input name="atividade-hora" class="form-control padd" type="time">
+                                                                    
+                                                            </div>
+                                                          <div class="form-group">
+
+                                                            <input name="atividade-carga" class="form-control" type="text" placeholder="Carga horária">
+                                                         </div>
+                                                         
 
 
                                                            
@@ -376,15 +394,11 @@
                                                <?php while($dado = $con->fetch_array()){?>
                                             
                                             <tr>
-                                                <td><?php echo $nome_user ?></td>
+                                                <td><?php echo $dado["id_atividade"] ?></td>
                                                 <td><?php echo $dado["nome_atividade"] ?></td>
                                                 <td><?php echo $dado["tipo_atividade"] ?></td>
                                                 <td><?php echo $dado["status_valor"] ?></td>
-                                                <td><?php echo $dado["duracao_atividade"],' horas' ?></td>
-                                                <td><?php echo $dado["hora"] ?></td>
-                                                <td><?php echo $dado["data_atividade"] ?></td>
-                                                <td><?php echo $dado["sala"] ?></td>
-                                                <td><?php echo $dado["carga"], ' horas'?></td>
+                                                
                                                
                                             </tr>
                                                <?php } ?>   

@@ -19,7 +19,7 @@
     
           
       
-           header('Location:painel.php');
+           header('Location:user.php');
      
         
          

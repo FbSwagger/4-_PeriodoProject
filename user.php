@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <?php
     include('conexao.php');
-  
+     
+
+
+    $consulta = "SELECT * FROM eventos";
+    $con = $conexao->query($consulta) or die($conexao->error);
 
 ?>
+
 
 <html dir="ltr" lang="pt-br">
 
@@ -14,15 +19,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon"  href="img/favicon.ico" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="">
     <title>Tela admin</title>
     <!-- Custom CSS -->
-    <link rel="shortcut icon"  href="img/favicon.ico" />
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
-    <link href="./css/pag-certificados.css" rel="stylesheet">
+    <link href="./dist/css/estilo.css" rel="stylesheet">
+    <link href="./dist/css/estilo.CSS" rel="stylesheet">
+
     
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -61,11 +68,11 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="https://eventopi.herokuapp.com/painel.php" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
-                                <img src="img/EVENTOPI.png" alt="homepage" class="light-logo" />
+                                <img src="./img/EVENTOPI.png" alt="homepage" class="light-logo" />
                             </b>
                            
                         </a>
@@ -92,7 +99,10 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        
+                        <li class="nav-item search-box">
+                            
+                             <h2>Página do Participante</h2>
+                        </li>
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -101,11 +111,13 @@
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
+                        <
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="https://eventopi.herokuapp.com/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
-                
+                            <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/painel.php"><i class="ti-user m-r-5 m-l-5"></i>Mudar para admin</a>
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class=""></i>Sair</a>
+                                
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -128,44 +140,38 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                     <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://eventopi.herokuapp.com/painel.php" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/user.php" aria-expanded="false">
                                 <i class="mdi mdi-calendar"></i>
-                                <span class="hide-menu">Programação</span>
+                                <span class="hide-menu">Dados do eventos</span>
+                            </a>
+                    </li>
+                    <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/atividades-disponiveis.php" aria-expanded="false">
+                                <i class="mdi mdi-checkbox-marked
+"></i>
+                                <span class="hide-menu">Atividades Disponíveis</span>
                             </a>
                         </li>
                     
+                       
+                         
+                       
+                       
+                  
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-account"></i>
-                                <span class="hide-menu">Pessoas</span>
-                            </a>
-                        </li>
-                         
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://eventopi.herokuapp.com/inscritos.php" aria-expanded="false">
-                                <i class="mdi mdi-ticket"></i>
-                                <span class="hide-menu">Inscrições</span>
+                                <i class="mdi mdi-school"></i>
+                                <span class="hide-menu">Meus certificados</span>
                             </a>
                         </li>
                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/pag-certificados.php" aria-expanded="false">
-                                <i class="mdi mdi-school"></i>
-                                <span class="hide-menu">Certificados</span>
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/cobra%C3%A7as.php" aria-expanded="false">
+                                <i class="mdi mdi-coin"></i>
+                                <span class="hide-menu">Minhas Cobranças</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-desktop-mac"></i>
-                                <span class="hide-menu">Página do evento </span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-settings"></i>
-                                <span class="hide-menu">Configuração</span>
-                            </a>
-                        </li>
+                        
 
                     </ul>
                 </nav>
@@ -183,14 +189,7 @@
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col-5 align-self-center">
-                        <h4 class="page-title">Inscritos</h4>
-                    </div>
-                    
-                </div>
-            </div>
+            
             <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
@@ -202,26 +201,21 @@
                 <!-- Email campaign chart -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-md-8">
-                        <div  ng-controller="Atividade">
-                            <ul class="nav nav-tabs space">
-                                <li class="">
-                                    <a href="http://localhost/4-_PeriodoProject/inscritos.php"><button type="button" class="btn btn-secondary">Todas</button></a>
-                                </li>
-                                <li class="">
-                                    <button type="button" class="btn btn-light">Inscrições Pagas</button>
-                                </li>
-                            
-                                <li class="">
-                                    <button type="button" class="btn btn-light">Inscrições Pendentes</button>
-                                </li>
-
-
-                            </ul>
-                       </div>
-                    </div>
                    
-              
+                <?php while($dado = $con->fetch_array()){?>
+                    <form action="matricula.php"  method="POST">
+                            <img id="img-evento"  src="img/WORK.jpg " width="600px"  >
+                            <br>
+                            <h1 id="h2-form"><?php echo $dado["nome_evento"] ?></h1>
+                            <h3 id="h2-form">Organizador: <?php echo $dado["nome_user"] ?></h3>
+                        
+                         
+                            
+                    </form>
+            <br>
+                                                    
+                                           
+    <?php } ?>   
                    
                     
                 </div>
@@ -238,41 +232,10 @@
                 <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
                 <!-- ============================================================== -->
-                <div id="container-certificado" class="row">
-   
-                   
-                     <table class="table">
-                                        <thead  id="table-cabecalho">
-                                            <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">Tipo pessoa</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Evento</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                         
-                                            
-                                            <tr>
-                                                <td><?php echo $dado["id_certificado"] ?></td>
-                                                <td><?php echo $dado["titulo_certificado"] ?></td>
-                                                <td><?php echo $dado["tipo_pessoa"] ?></td>
-                                                <td><?php echo $dado["modelo"] ?></td>
-                                                <td><?php echo $dado["modelo"] ?></td>
-                                                
-                                                
-                                                
-                                            </tr>
-                                            
-                                        </tbody>
-                                        </table>
-
-                    <!-- column -->
-                   
-                         <!-- Comment Row -->
+                <div class="row">
+                        
+                     
+                                <!-- Comment Row -->
                                 
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
