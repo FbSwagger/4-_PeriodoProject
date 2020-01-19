@@ -41,11 +41,11 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="https://eventopi.herokuapp.com">Home</a></li>
-				          <li><a href="https://eventopi.herokuapp.com/eventos.php">Eventos</a></li>
+				          <li><a href="https://eventopi.herokuapp.com/Eventos.php">Eventos</a></li>
 				         
 				          <li><a href="#schedule">Ajuda</a></li>
 				          <li><a href="https://eventopi.herokuapp.com/criar-evento.php">Criar Evento</a></li>
-				          <li><a class="ticker-btn" href="https://eventopi.herokuapp.com//login.php">Login</a></li>
+				          <li><a class="ticker-btn" href="https://eventopi.herokuapp.com/login.php">Login</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
