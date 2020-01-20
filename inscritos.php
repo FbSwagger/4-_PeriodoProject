@@ -128,7 +128,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                     <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://eventopi.herokuapp.com/painel.php" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/painel.php" aria-expanded="false">
                                 <i class="mdi mdi-calendar"></i>
                                 <span class="hide-menu">Programação</span>
                             </a>
@@ -142,7 +142,7 @@
                         </li>
                          
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://eventopi.herokuapp.com/inscritos.php" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/inscritos.php" aria-expanded="false">
                                 <i class="mdi mdi-ticket"></i>
                                 <span class="hide-menu">Inscrições</span>
                             </a>

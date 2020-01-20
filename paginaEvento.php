@@ -30,13 +30,13 @@
             <li><a href="http://localhost/4-_PeriodoProject
             
             /">Home</a></li>
-            <li><a href="https://eventopi.herokuapp.com/Eventos.php">Eventos</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
            
             <li><a href="#">Ajuda</a></li>
-            <li><a href="https://eventopi.herokuapp.com/criar-evento.php">Criar eventos</a></li>
+            <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar eventos</a></li>
            
             <li>
-              <a class="btn" href="https://eventopi.herokuapp.com/cadastro-usuario.php">Cadastre-se</a>
+              <a class="btn" href="http://localhost/4-_PeriodoProject/cadastro-usuario.php">Cadastre-se</a>
             </li>
         </ul>
     </nav>

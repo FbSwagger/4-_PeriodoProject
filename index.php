@@ -36,21 +36,21 @@
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://eventopi.herokuapp.com/"><img src="img/EVENTOPI.png" alt="" title="" /></a>
+				        <a href="http://localhost/4-_PeriodoProject"><img src="img/EVENTOPI.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://eventopi.herokuapp.com">Home</a></li>
-				          <li><a href="https://eventopi.herokuapp.com/Eventos.php">Eventos</a></li>
+				          <li class="menu-active"><a href="">Home</a></li>
+				          <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
 				         
 				          <li><a href="#schedule">Ajuda</a></li>
-				          <li><a href="https://eventopi.herokuapp.com/criar-evento.php">Criar Evento</a></li>
-				          <li><a class="ticker-btn" href="https://eventopi.herokuapp.com/login.php">Login</a></li>
+				          <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar Evento</a></li>
+				          <li><a class="ticker-btn" href="http://localhost/4-_PeriodoProject/login.php">Login</a></li>
 				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
+				      </nav>		    		
 			    	</div>
 			    </div>
-			  </header><!-- #header -->
+			  </header>
 
 
 			<!-- start banner Area -->
@@ -64,7 +64,7 @@
 								Crie seu evento hoje mesmo !			
 							</h1>
 							<div>
-							<a class="botao text-white" href="https://eventopi.herokuapp.com/criar-evento.php">CRIAR EVENTO AGORA</a>
+							<a class="botao text-white" href="http://localhost/4-_PeriodoProject/criar-evento.php">CRIAR EVENTO AGORA</a>
 							<div>
 							
 						</div>											
