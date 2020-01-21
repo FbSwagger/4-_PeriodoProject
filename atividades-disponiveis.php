@@ -209,14 +209,21 @@
                             <h1 id="h2-form"><?php echo $dado["nome_atividade"] ?></h1>
                             <h3 id="h2-form">Tipo: <?php echo $dado["tipo_atividade"] ?></h3>
                             <button class="btn btn-verde">Participar</button>
+                            
                         
                          
                             
-                    </form>
-            
-                                                    
-                                           
+                    </form>  
+                    <br>
+                    <br>
+                    <br> 
+                    <br>
+                    <br>
+                    <br>                 
                 <?php } ?>   
+                
+            
+   
                    
                     
                 </div>

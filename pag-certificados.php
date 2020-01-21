@@ -104,7 +104,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="http://localhost/projeto/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
                 
                             </div>
                         </li>
@@ -245,93 +245,10 @@
                         <button id="btn-verde" type="button" class="btn" data-toggle="modal" data-target="#ModalLongoExemplo"> <i class="mdi mdi-plus"></i>Novo certificado</button>
                                     <!-- Botão para acionar modal -->
 
-                                        
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header header-modal modal-verde">
-                                                <h5 class="modal-title" id="TituloModalLongoExemplo">Adicionar Certificado</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                   
-                                                        <div class="input-group mb-3">
-                                                                <div class="input-group-prepend">
-                                                                  <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
-                                                                </div>
-                                                                <input name="nome" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                        </div>
-                                                            <div class="row">
-                                                            <div class="input-group mb-3">
-                                                                    <div class="input-group-prepend">
-                                                                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-                                                                    </div>
-                                                                    <input name="email" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="input-group mb-3">
-                                                                <div class="input-group-prepend">
-                                                                  <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
-                                                                </div>
-                                                                <input name="cpf" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                                    <select name="atividade" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Atividade</option>
-                                                                        <option ng-value="true" value="Minicurso">Minicurso</option>
-                                                                        <option ng-value="false" value="palestra">Palestra</option>
-                                                                        <option ng-value="false" value="workshop">Workshop</option>
-                                                                    </select>
-                                                            </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                                            <button type="submit" class="btn btn-verde">Gerar</button>
-                                                        </div>
-                                                 
-                                                        
-                                                </div>
-                                                   
-                                            </div>
-                                            </div>
-                                        </div>
-                                </div>
+                     </div>                  
                     </form>
                  </div>
-                     <table class="table">
-                                        <thead  id="table-cabecalho">
-                                            <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Titulo</th>
-                                            <th scope="col">Tipo pessoa</th>
-                                            <th scope="col">Modelo</th>
-                                            <th scope="col">Ver</th>
-                                            
-                                            
-                                         
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                         
-                                            
-                                            <tr>
-                                                <td><?php echo $dado["id_certificado"] ?></td>
-                                                <td><?php echo $dado["titulo_certificado"] ?></td>
-                                                <td><?php echo $dado["tipo_pessoa"] ?></td>
-                                                <td><?php echo $dado["modelo"] ?></td>
-                                                 <td> <button type="button " class="btn"><a  href="./img/certificado ES.jpg">Ver certificado</a></button></td>
-                                                
-                                                
-                                            </tr>
-                                            
-                                        </tbody>
-                                        </table>
-
+                    
                     <!-- column -->
                    
                          <!-- Comment Row -->

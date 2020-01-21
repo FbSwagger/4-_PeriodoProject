@@ -227,7 +227,7 @@
                                     <a href="http://localhost/4-_PeriodoProject/cupom.php"><button type="button" class="btn btn-light">Cupons de descontos</button></a>
                                 </li>
                                 <li class="">
-                                    <button type="button" class="btn btn-light">Configuração</button>
+                                    <button type="button" class="btn btn-light">Dados de pagamento</button>
                                 </li>
 
 
@@ -380,10 +380,11 @@
                                             <th scope="col">#</th>
                                             <th scope="col">Nome</th>
                                             <th scope="col">Tipo</th>
-                                            <th scope="col">Valor</th>
+                                            <th scope="col">status</th>
                                             <th scope="col">Duração</th>
+                                            <th scope="col">Valor</th>
                                             <th scope="col">Horário</th>
-                                            <th scope="col">data</th>
+                                            <th scope="col">data de inicio</th>
                                             <th scope="col">sala</th>
                                             <th scope="col">Carga horária</th>
 
@@ -398,7 +399,13 @@
                                                 <td><?php echo $dado["nome_atividade"] ?></td>
                                                 <td><?php echo $dado["tipo_atividade"] ?></td>
                                                 <td><?php echo $dado["status_valor"] ?></td>
-                                                
+
+                                                <td><?php echo $dado["duracao_atividade"] ?></td>
+                                                <td><?php echo $dado["valor"] ?></td>
+                                                <td><?php echo $dado["horario"] ?></td>
+                                                <td><?php echo $dado["data_inicio"] ?></td>
+                                                <td><?php echo $dado["sala"] ?></td>
+                                                <td><?php echo $dado["cargaHoraria"] ?></td>
                                                
                                             </tr>
                                                <?php } ?>   

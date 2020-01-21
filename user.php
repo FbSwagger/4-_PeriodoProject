@@ -115,7 +115,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                            <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/painel.php"><i class="ti-user m-r-5 m-l-5"></i>Mudar para admin</a>
+                           
                                 <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class=""></i>Sair</a>
                                 
                             </div>

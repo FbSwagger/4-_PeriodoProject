@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <?php
     include('conexao.php');
-  
+    
+    $consulta = "SELECT * FROM matriculados";
+    $con = $conexao->query($consulta) or die($conexao->error);
 
 ?>
 
@@ -104,7 +106,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="https://eventopi.herokuapp.com/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
                 
                             </div>
                         </li>
@@ -163,7 +165,7 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                                 <i class="mdi mdi-settings"></i>
-                                <span class="hide-menu">Configuração</span>
+                                <span class="hide-menu">Dados de pagamento</span>
                             </a>
                         </li>
 
@@ -246,27 +248,23 @@
                                             <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Nome</th>
-                                            <th scope="col">Tipo pessoa</th>
                                             <th scope="col">Email</th>
-                                            <th scope="col">Evento</th>
+                                            <th scope="col">Telefone</th>
+
 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             
                                          
-                                            
+                                          <?php while($dado = $con->fetch_array()){?>
                                             <tr>
-                                                <td><?php echo $dado["id_certificado"] ?></td>
-                                                <td><?php echo $dado["titulo_certificado"] ?></td>
-                                                <td><?php echo $dado["tipo_pessoa"] ?></td>
-                                                <td><?php echo $dado["modelo"] ?></td>
-                                                <td><?php echo $dado["modelo"] ?></td>
-                                                
-                                                
-                                                
+                                                <td><?php echo $dado["id_matricula"] ?></td>
+                                                <td><?php echo $dado["nome_participante"] ?></td>
+                                                <td><?php echo $dado["email_participante"] ?></td>
+                                                <td><?php echo $dado["telefone_participante"] ?></td> 
                                             </tr>
-                                            
+                                          <?php } ?>   
                                         </tbody>
                                         </table>
 
