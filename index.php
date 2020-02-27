@@ -14,7 +14,8 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Conference-Home</title>
+		<title>EVENTOPI</title>
+		<link rel="shortcut icon"  href="img/favicon.ico" />
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -35,21 +36,21 @@
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="http://localhost/4-_PeriodoProject"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="http://localhost/4-_PeriodoProject"><img src="img/EVENTOPI.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="http://localhost/4-_PeriodoProject/">Página principal</a></li>
-				          <li><a href="http://localhost/4-_PeriodoProject/eventos.php">Eventos</a></li>
+				          <li class="menu-active"><a href="">Home</a></li>
+				          <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
 				         
 				          <li><a href="#schedule">Ajuda</a></li>
 				          <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar Evento</a></li>
 				          <li><a class="ticker-btn" href="http://localhost/4-_PeriodoProject/login.php">Login</a></li>
 				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
+				      </nav>		    		
 			    	</div>
 			    </div>
-			  </header><!-- #header -->
+			  </header>
 
 
 			<!-- start banner Area -->
@@ -62,23 +63,60 @@
 							<h1 class="text-white">
 								Crie seu evento hoje mesmo !			
 							</h1>
-							<a class="ticker-btn text-white butao-criar " herf="http://localhost/4-_PeriodoProject/criar-evento.php">Crie seu evento</a>
+							<div>
+							<a class="botao text-white" href="http://localhost/4-_PeriodoProject/criar-evento.php">CRIAR EVENTO AGORA</a>
+							<div>
+							
 						</div>											
 					</div>
 				</div>
 				
 			</section>
 			<section>
+			  <div class="sessao-1">
+					<div id="text-session1">
+						<h2>Gerencie seu evento</h2>
+						<p>Possibilitamos que você crie seu evento de forma fácil e faça o seu gerenciamento, possibilitando uma ótima experiência.</p>
+						<a class="ticker-btn text-white">Saber mais</a>
+					</div>
+					<div>
+						<img id="img-session1" src="img/undraw_schedule_pnbk.png">
 
-				<h2>Gerencie seu evento</h2>
-
-
+					</div>
+			  </div>
 			</section>
+			<section id="servicos">
+				 
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
 			<footer>
 				<p>Todos os direitos reservados</p>
+				
 			</footer>
 			<!-- End banner Area -->				
-	
+	         <!--JB Tracker--> <script type="text/javascript"> var _paq = _paq || []; (function(){ if(window.apScriptInserted) return; _paq.push(['clientToken', 'P%2bsIjEMd6oQ%3d']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://prod.benchmarkemail.com/tracker.bundle.js'; s.parentNode.insertBefore(g,s); window.apScriptInserted=true;})(); </script> <!--/JB Tracker--> <!-- BEGIN: Benchmark Email Signup Form Code -->
+<script type="text/javascript" id="lbscript1300527" src="https://lb.benchmarkemail.com//br/code/lbformnew.js?mFcQnoBFKMSTjPH8cEA6lLJ25jqXIyRIUH%252Bdr3NZs4Uw5g2Plmj4XMj9ybR%252Bnt%252Fk"></script><noscript>Please enable JavaScript <br /><div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="//www.benchmarkemail.com/br" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Serviços de Email Marketing</a> pela Benchmark</div></noscript>
+<!-- END: Benchmark Email Signup Form Code -->
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			

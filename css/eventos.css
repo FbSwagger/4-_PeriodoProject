@@ -1,106 +1,186 @@
-body {
+body{
     margin: 0;
     padding: 0;
-    background:#f7f7f7;
-    font-family:'PT Sans', sans-serif;
-    height: 100%;
-    
-} 
-#filtro{
-    
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f7f7f7;
 }
-.box2 {
-      text-align:center;
-      position:relative;
-      top: 18px;  
-      
-}
-
-.box { 
-    
-    padding: 40px;
-    text-align: center;
-    width:98%;
-    height:auto;
-    background:#fff;
-    margin:110px auto; 
-    box-shadow: 2px 1px 5px rgba(107, 104, 104, 0.5);
-} 
-
-/* effect 1 */
-
-/*==================================================
- * Effect 1
- * ===============================================*/
- 
-
-
-.box2 select {      
-    background-color: url(ico-seta-select.gif) no-repeat #d3d3d3;  /* Imagem de fundo (Seta) */      
-    background-position: 205px center;  /*Posição da imagem do background*/      
-    width: 170px; /* Tamanho do select, maior que o tamanho da div "div-select" */      
-    height:60px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */  
-    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */  
-    font-size:16px; /* Tamanho da Fonte */  
-    padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */  
-    color:rgb(15, 15, 15); /* Cor da Fonte */      
-    text-indent: 0.01px; /* Remove seta padrão do FireFox */      
-    text-overflow: "";  /* Remove seta padrão do FireFox */            
-}
-
-select::-ms-expand { display: none;
-} /* Remove seta padrão do IE*/
-
-/*---------------> SVG <----------------*/
-#svg-tela { 
-    height: 630px;
-    width: 680px;
-    
-}
-
-/* nav - bar */ 
-nav {
+/*-----------------> Nav bar ---------------------*/
+nav{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     background-color: rgba(4,9,30,0.85);
-    color: rgb(212, 200, 200);
-    height: 60px;
+    color: #fff;
+    height: 50px;
     align-items: center;
     padding: 11px;
     justify-content: space-between;
     box-shadow: 1px 0.5px 4px #999;	  
 }
-
 #logo{
     cursor: pointer;
-
 }
-#select{
-    border-radius: 10px;
-    border: none;
-    height: 50px;
-    width: 73%;
-    background-color: #D3D3D3;;
+#menu{
+    list-style: none;
+    display:inline-flex;
+    padding: 20px;
 }
-input{
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    border: none;
-    background:#D3D3D3;
-    width: 66%;
- }
 
-.btn{
-    font-weight: bold;
-    border: none;
-    width: 73%;
-    padding: 15px;
+#menu li{
+    padding: 10px;
+    font-weight:400;
+}
+#menu a{
+    
+    text-decoration: none;
     color: #fff;
-
-    border-radius: 2px;
+    font-size: 14px;
+    font-family: Poppins;
+    
+}
+#menu li:hover{
+    background-color:#8ab92d;
+    border-radius: 16px;
+}
+/*--
+/*---------------> SVG <----------------*/
+#svg-login{
+ width: 600px;
+}
+/* ---------------> BOTÕES <--------------------*/
+.btn{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
     background:#8ab92d;   
+    border-radius: 16px;
     cursor: pointer; 
 }
 
+footer{
+    background-color: #233242;
+  
+  
+  display: block;
+  
+  text-align: center;
 
+  height: 100px;
+  margin: 0px;
+}
+
+footer p{
+  color: white;
+  padding: 39px;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 0px ;
+}
+
+.btn-facebook{
+   background: #3b5998;
+   color: #fff;
+   border: none;
+   border-radius: 8px; 
+   padding: 10px;
+   font-family: 'PT Sans', sans-serif;
+   cursor: pointer;
+}
+/*
+.btn-google{
+    background: #bc3c3c;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 8px; 
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+ }
+*/
+
+/*--------------- CONTAINER -------------------*/
+#svg-login{
+    padding: 30px;
+    margin-left: 110px;
+ 
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#text-atividade{
+    padding-left: 20px;
+}
+/* -------> FORMATAÇÃO DO FORMULARIO <------------ */
+form{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 2px 1px 5px rgba(107, 104, 104, 0.5);
+    padding: 30px;
+    background-color: #fff;
+
+}
+form input{
+   margin-top: 15px;
+   padding: 15px;
+   border-radius: 8px;
+   border: none;
+   background:#D3D3D3;
+}
+#img-evento{
+    width: 350px;
+}
+#h2-form{
+    color:black;
+    margin-top: -20px;
+}
+.btn-form{
+    width: 300px;
+    height: 40px;
+}
+
+#esqueceu-senha{
+    padding: 10px;
+    display: flex;
+    float: right;
+    color: 	#1E90FF;
+    
+}
+/*-----------> ICONES <-------------*/
+.icon{
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*-----------> AJUSTES DE RESPONSIVIDADE <-------------*/
+@media (max-width: 1024px) {
+    #svg-login{
+        display: none;
+    }
+    .container{ 
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    form{
+        width: 100%;
+        padding:20px;
+        margin-right: 0;
+        
+        
+    }
+    .btn{
+        width: auto;
+    }
+    
+ }

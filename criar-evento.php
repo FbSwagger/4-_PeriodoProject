@@ -5,20 +5,20 @@
                 <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
                 <link rel="stylesheet" href="./css/criar-evento.css"> 
+                <link rel="shortcut icon"  href="img/favicon.ico" />
                 <script src="js/main.js"></script>
         </head>
         <body>
 
                 <nav id="nav-bar">
-                    <a href="http://localhost/projeto/"><img id="logo" src="img/logo.png"></a>
+                    <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="img/EVENTOPI.png"></a>
                  <ul id="menu">
-                    <li><a href="http://localhost/projeto/">Home</a></li>
-                    <li><a href="http://localhost/projeto/Eventos.php">Eventos</a></li>
-                    <li><a href="#">Publicações</a></li>
+                    <li><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
+                    <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
                     <li><a href="#">Ajuda</a></li>
                 
                     <li>
-                    <a class="btn" href="http://localhost/projeto/cadastro-usuario.php">Cadastre-se</a>
+                    <a class="btn" href="http://localhost/4-_PeriodoProject/cadastro-usuario.php">Cadastre-se</a>
                     </li>
                 </ul>
                 </nav>

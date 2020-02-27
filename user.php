@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php
+    include('conexao.php');
+     
+
+
+    $consulta = "SELECT * FROM eventos";
+    $con = $conexao->query($consulta) or die($conexao->error);
+
+?>
+
+
 <html dir="ltr" lang="pt-br">
 
 <head>
@@ -8,14 +19,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon"  href="img/favicon.ico" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="">
     <title>Tela admin</title>
     <!-- Custom CSS -->
-    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="../../dist/css/style.min.css" rel="stylesheet">
-    <link href="../../dist/css/estilo.css" rel="stylesheet">
+    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="./dist/css/estilo.css" rel="stylesheet">
+    <link href="./dist/css/estilo.CSS" rel="stylesheet">
+
+    
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -52,11 +68,11 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="index.html" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
-                                <img src="../../assets/images/download.png" alt="homepage" class="light-logo" />
+                                <img src="./img/EVENTOPI.png" alt="homepage" class="light-logo" />
                             </b>
                            
                         </a>
@@ -84,20 +100,8 @@
                         <!-- Search -->
                         <!-- ============================================================== -->
                         <li class="nav-item search-box">
-                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
-                                <div class="d-flex align-items-center">
-                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
-                                    <div class="ml-1 d-none d-sm-block">
-                                        <span>Pesquisar</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Pesquisar">
-                                <a class="srh-btn">
-                                    <i class="ti-close"></i>
-                                </a>
-                            </form>
+                            
+                             <h2>Página do Participante</h2>
                         </li>
                     </ul>
                     <!-- ============================================================== -->
@@ -107,12 +111,13 @@
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
+                        <
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
+                           
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class=""></i>Sair</a>
+                                
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -134,37 +139,40 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                    <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/user.php" aria-expanded="false">
                                 <i class="mdi mdi-calendar"></i>
-                                <span class="hide-menu">Programação</span>
+                                <span class="hide-menu">Dados do eventos</span>
+                            </a>
+                    </li>
+                    <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/atividades-disponiveis.php" aria-expanded="false">
+                                <i class="mdi mdi-checkbox-marked
+"></i>
+                                <span class="hide-menu">Atividades Disponíveis</span>
                             </a>
                         </li>
+                    
+                       
+                         
+                       
+                       
+                  
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-account"></i>
-                                <span class="hide-menu">Pessoas</span>
+                                <i class="mdi mdi-school"></i>
+                                <span class="hide-menu">Meus certificados</span>
                             </a>
                         </li>
-                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-square-inc-cash"></i>
-                                <span class="hide-menu">Vendas</span>
-                            </a>
-                        </li>
+                       
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-ticket"></i>
-                                <span class="hide-menu">Inscrições</span>
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/cobra%C3%A7as.php" aria-expanded="false">
+                                <i class="mdi mdi-coin"></i>
+                                <span class="hide-menu">Minhas Cobranças</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-face"></i>
-                                <span class="hide-menu">Certificados</span>
-                            </a>
-                        </li>
-                      
+                        
+
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -181,14 +189,7 @@
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col-5 align-self-center">
-                        <h4 class="page-title">Programação</h4>
-                    </div>
-                    
-                </div>
-            </div>
+            
             <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
@@ -200,33 +201,22 @@
                 <!-- Email campaign chart -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-md-8">
-                        <div  ng-controller="Atividade">
-                            <ul class="nav nav-tabs space">
-                                <li class="">
-                                    <button type="button" class="btn btn-secondary">Atividades</button>
-                                </li>
-                                <li class="">
-                                    <button type="button" class="btn btn-light">Convidados</button>
-                                </li>
-                                <li class="">
-                                     <button type="button" class="btn btn-light">Locais</button>
-                                </li>
-                                <li class="">
-                                    <button type="button" class="btn btn-light">Cupons de descontos</button>
-                                </li>
-                                <li class="">
-                                    <button type="button" class="btn btn-light">Configuração</button>
-                                </li>
-
-
-                            </ul>
-                       </div>
-                    </div>
                    
-                </div>
-                <div class="row">
-                    <h4>Atividades</h4>
+                <?php while($dado = $con->fetch_array()){?>
+                    <form action="matricula.php"  method="POST">
+                            <img id="img-evento"  src="img/WORK.jpg " width="600px"  >
+                            <br>
+                            <h1 id="h2-form"><?php echo $dado["nome_evento"] ?></h1>
+                            <h3 id="h2-form">Organizador: <?php echo $dado["nome_user"] ?></h3>
+                        
+                         
+                            
+                    </form>
+            <br>
+                                                    
+                                           
+    <?php } ?>   
+                   
                     
                 </div>
                 <!-- ============================================================== -->
@@ -243,8 +233,8 @@
                 <!-- Recent comment and chats -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <!-- column -->
-                    
+                        
+                     
                                 <!-- Comment Row -->
                                 
             <!-- ============================================================== -->
@@ -252,11 +242,7 @@
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                Todos os direitos reservados
-               
-            </footer>
+          
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -271,23 +257,23 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="./assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
-    <script src="../../dist/js/waves.js"></script>
+    <script src="./dist/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="../../dist/js/sidebarmenu.js"></script>
+    <script src="./dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="../../dist/js/custom.min.js"></script>
+    <script src="./dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
     <!--chartis chart-->
-    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
-    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="./assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="./assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="./dist/js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Stylesheet" type="Text/css" href="css/estilo-cadastro.css">
+    <link rel="shortcut icon"  href="img/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
@@ -13,11 +14,10 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/logo.png"></a>
+        <a href="http://localhost/4-_PeriodoProject/"><img id="logo" src="./img/EVENTOPI.png"></a>
         <ul id="menu">
             <li><a href="http://localhost/4-_PeriodoProject/">Home</a></li>
             <li><a href="http://localhost/4-_PeriodoProject/Eventos.php">Eventos</a></li>
-            <li><a href="#">Publicações</a></li>
             <li><a href="#">Ajuda</a></li>
             <li><a href="http://localhost/4-_PeriodoProject/criar-evento.php">Criar eventos</a></li>
             <li>
@@ -43,6 +43,8 @@
         </div>
 
     </div>
-    
+    <footer>
+				<p>Todos os direitos reservados</p>
+	</footer>
 </body>
 </html>

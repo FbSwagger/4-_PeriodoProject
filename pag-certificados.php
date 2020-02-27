@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <?php
     include('conexao.php');
-    $consulta = "SELECT * FROM certificados";
-    $con = $conexao->query($consulta) or die($conexao->error);
+  
 
 ?>
 
@@ -23,6 +22,7 @@
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="./css/pag-certificados.css" rel="stylesheet">
+    <link rel="shortcut icon"  href="img/favicon.ico" />
     
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -61,11 +61,11 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-brand">
-                        <a href="http://localhost/projeto/painel.php" class="logo">
+                        <a href="http://localhost/4-_PeriodoProject/painel.php" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
                               
-                                <img src="./assets/images/download.png" alt="homepage" class="light-logo" />
+                                <img src="img/EVENTOPI.png" alt="homepage" class="light-logo" />
                             </b>
                            
                         </a>
@@ -92,22 +92,7 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        <li class="nav-item search-box">
-                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
-                                <div class="d-flex align-items-center">
-                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
-                                    <div class="ml-1 d-none d-sm-block">
-                                        <span>Pesquisar</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Pesquisar">
-                                <a class="srh-btn">
-                                    <i class="ti-close"></i>
-                                </a>
-                            </form>
-                        </li>
+                       
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -119,7 +104,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="http://localhost/projeto/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
+                                <a class="dropdown-item" href="http://localhost/4-_PeriodoProject/"><i class="ti-user m-r-5 m-l-5"></i>Sair</a>
                 
                             </div>
                         </li>
@@ -157,20 +142,14 @@
                         </li>
                          
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/inscritos.php" aria-expanded="false">
                                 <i class="mdi mdi-ticket"></i>
                                 <span class="hide-menu">Inscrições</span>
                             </a>
                         </li>
                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-file-document"></i>
-                                <span class="hide-menu">Submissões</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/projeto/pag-certificados.php" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="http://localhost/4-_PeriodoProject/pag-certificados.php" aria-expanded="false">
                                 <i class="mdi mdi-school"></i>
                                 <span class="hide-menu">Certificados</span>
                             </a>
@@ -266,93 +245,10 @@
                         <button id="btn-verde" type="button" class="btn" data-toggle="modal" data-target="#ModalLongoExemplo"> <i class="mdi mdi-plus"></i>Novo certificado</button>
                                     <!-- Botão para acionar modal -->
 
-                                        
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header header-modal modal-verde">
-                                                <h5 class="modal-title" id="TituloModalLongoExemplo">Adicionar Certificado</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                   
-                                                        <div class="input-group mb-3">
-                                                                <div class="input-group-prepend">
-                                                                  <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
-                                                                </div>
-                                                                <input name="nome" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                        </div>
-                                                            <div class="row">
-                                                            <div class="input-group mb-3">
-                                                                    <div class="input-group-prepend">
-                                                                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-                                                                    </div>
-                                                                    <input name="email" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="input-group mb-3">
-                                                                <div class="input-group-prepend">
-                                                                  <span class="input-group-text" id="inputGroup-sizing-default">CPF</span>
-                                                                </div>
-                                                                <input name="cpf" type="text" autocomplete="off" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-default" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                                    <select name="atividade" class="form-control ng-pristine ng-valid ng-empty ng-touched" st-delay="0" >
-                                                                        <option ng-value="null" value="object:null" selected="selected">Atividade</option>
-                                                                        <option ng-value="true" value="Minicurso">Minicurso</option>
-                                                                        <option ng-value="false" value="palestra">Palestra</option>
-                                                                        <option ng-value="false" value="workshop">Workshop</option>
-                                                                    </select>
-                                                            </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                                            <button type="submit" class="btn btn-verde">Gerar</button>
-                                                        </div>
-                                                 
-                                                        
-                                                </div>
-                                                   
-                                            </div>
-                                            </div>
-                                        </div>
-                                </div>
+                     </div>                  
                     </form>
                  </div>
-                     <table class="table">
-                                        <thead  id="table-cabecalho">
-                                            <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Titulo</th>
-                                            <th scope="col">Tipo pessoa</th>
-                                            <th scope="col">Modelo</th>
-                                            <th scope="col">Ver</th>
-                                            
-                                            
-                                         
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                         <?php while($dado = $con->fetch_array()){?>
-                                            
-                                            <tr>
-                                                <td><?php echo $dado["id_certificado"] ?></td>
-                                                <td><?php echo $dado["titulo_certificado"] ?></td>
-                                                <td><?php echo $dado["tipo_pessoa"] ?></td>
-                                                <td><?php echo $dado["modelo"] ?></td>
-                                                 <td> <button type="button " class="btn"><a  href="./img/certificado ES.jpg">Ver certificado</a></button></td>
-                                                
-                                                
-                                            </tr>
-                                            <?php } ?>  
-                                        </tbody>
-                                        </table>
-
+                    
                     <!-- column -->
                    
                          <!-- Comment Row -->
